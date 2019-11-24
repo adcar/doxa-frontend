@@ -1,0 +1,11 @@
+.gauge-container > .gauge > .dial {
+  stroke-width: 10;
+}
+
+.gauge-container > .gauge > .value {
+  stroke-width: 10;
+}
+.gauge-container {
+  height: 500px;
+  width: 500px;
+}
