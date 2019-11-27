@@ -1,24 +1,55 @@
 import React, { useState } from "react";
 import Router from "next/router";
-import { gql } from "apollo-boost";
 
 import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles(theme => ({
   container: {
     display: "flex",
     flexWrap: "wrap"
   },
-  textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
-    width: 200
+  input: {
+    marginTop: theme.spacing(4),
+    transition: "all 0.1s ease-out",
+    backgroundColor: theme.bg,
+    border: "none",
+    outline: "none",
+    fontSize: "18pt",
+    width: "100%",
+    padding: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
+    borderRadius: theme.radius,
+    "&:focus": {
+      boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
+    },
+    "&::placeholder": {
+      color: "lightgrey"
+    }
+  },
+  submit: {
+    marginTop: theme.spacing(4),
+    height: 60,
+    position: "absolute",
+    right: 40,
+    width: 100,
+    borderRadius: theme.radius,
+    border: "none",
+    backgroundColor: theme.palette.primary.main,
+    color: "white",
+    fontSize: "14pt",
+    outline: "none",
+    "&:hover": {
+      boxShadow: `3px 10px 15px ${theme.palette.primary.light}`
+    },
+    "&:focus": {
+      backgroundColor: theme.palette.primary.dark
+    }
   }
 }));
 
 export default function MainSearch() {
   const [term, setTerm] = useState("");
+  const classes = useStyles();
 
   return (
     <form
@@ -30,14 +61,14 @@ export default function MainSearch() {
         });
       }}
     >
-      <TextField
-        id="standard-basic"
-        label="Stocks, Hashtags, Companies, Cryptocurrencies, and More"
-        margin="normal"
-        variant="outlined"
+      <input
+        type="text"
+        className={classes.input}
         onChange={e => setTerm(e.target.value)}
-        fullWidth
+        placeholder="Bitcoin"
+        required
       />
+      <input type="submit" className={classes.submit} value={"Analyze"} />
     </form>
   );
 }

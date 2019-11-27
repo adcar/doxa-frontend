@@ -67,8 +67,6 @@ export default function Results({ term }) {
     <Container className={classes.resultsWrapper}>
       <Gauge
         value={Math.round(data.sentiment.averageWeighedPolarity * 100)}
-        dialStartAngle={180}
-        dialEndAngle={0}
         min={-100}
         max={100}
         color={value => {

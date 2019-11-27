@@ -1,9 +1,11 @@
 .gauge-container > .gauge > .dial {
   stroke-width: 10;
+  stroke-linecap: round;
 }
 
 .gauge-container > .gauge > .value {
   stroke-width: 10;
+  stroke-linecap: round;
 }
 .gauge-container {
   height: 500px;
