@@ -66,6 +66,8 @@ export default function MainSearch() {
         className={classes.input}
         onChange={e => setTerm(e.target.value)}
         placeholder="Bitcoin"
+        pattern="^[\w\s!#$']+$"
+        title="Only numbers, letters, dollar signs ($), and hashtags (#) are allowed"
         required
       />
       <input type="submit" className={classes.submit} value={"Analyze"} />
