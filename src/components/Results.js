@@ -6,6 +6,8 @@ import { Typography } from "@material-ui/core";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Gauge from "./Gauge";
+import Twemoji from "react-twemoji";
+import "./twemoji.css";
 
 const GET_SENTIMENT = gql`
   query GetSentiment($term: String!) {
@@ -34,6 +36,25 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center"
+  },
+  label: {
+    position: "absolute",
+    top: 190
+  },
+  value: {
+    fontSize: "80pt",
+    marginTop: 0,
+    textAlign: "center"
+  },
+  emoji: {
+    textAlign: "center",
+    marginBottom: 0
+  },
+  negative: {
+    fontSize: "50pt",
+    position: "absolute",
+    bottom: 50,
+    right: 70
   }
 }));
 
@@ -61,25 +82,73 @@ export default function Results({ term }) {
         </Typography>
       </Container>
     );
-  if (error) return <p>ERROR: {error}</p>;
+  if (error) {
+    if (error.graphQLErrors[0]) {
+      return <p>Error: {error.graphQLErrors[0].message}</p>;
+    } else {
+      return <p>An unknown error has occured</p>;
+    }
+  }
 
+  const value = Math.round(data.sentiment.averageWeighedPolarity * 100);
+  let emoji;
+  let color;
+  let sentiment;
+  if (value > 25) {
+    emoji = "😊";
+    color = "#42ff55";
+    sentiment = "Very Positive";
+  } else if (value > 4) {
+    emoji = "☺️";
+    color = "#5ee432";
+    sentiment = "Positive";
+  } else if (value > -4) {
+    emoji = "😑";
+    color = "#fffa50";
+    sentiment = "Neutral";
+  } else if (value > -25) {
+    emoji = "😠";
+    color = "#f7aa38";
+    sentiment = "Negative";
+  } else {
+    emoji = "😡";
+    color = "#ef4655";
+    sentiment = "Very Negative";
+  }
+  let formattedValue;
+  if (value < 0) {
+    formattedValue = (
+      <div>
+        <span className={classes.negative} style={{ color: color }}>
+          -
+        </span>
+        <span className={classes.value} style={{ color: color }}>
+          {Math.abs(value)}
+        </span>
+      </div>
+    );
+  } else {
+    formattedValue = (
+      <div>
+        <span className={classes.value} style={{ color: color }}>
+          {value}
+        </span>
+      </div>
+    );
+  }
   return (
     <Container className={classes.resultsWrapper}>
+      <Twemoji className={classes.label} options={{ className: "twemoji" }}>
+        <p className={classes.emoji}>{emoji}</p>
+        <p style={{ margin: 0, textAlign: "center" }}>{sentiment}</p>
+        {formattedValue}
+      </Twemoji>
       <Gauge
-        value={Math.round(data.sentiment.averageWeighedPolarity * 100)}
+        showValue={false}
+        value={value}
         min={-100}
         max={100}
-        color={value => {
-          if (value > 25) {
-            return "#5ee432";
-          } else if (value > 0) {
-            return "#fffa50";
-          } else if (value > -25) {
-            return "#f7aa38";
-          } else {
-            return "#ef4655";
-          }
-        }}
+        color={() => color}
       />
     </Container>
   );
