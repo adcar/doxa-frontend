@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SentimentGauge.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results.js" afterDir="false" />
     </list>
@@ -14,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,7 +85,7 @@
       <workItem from="1574629146225" duration="6401000" />
       <workItem from="1574793318447" duration="4000" />
       <workItem from="1574793468586" duration="16871000" />
-      <workItem from="1574966155731" duration="4258000" />
+      <workItem from="1574966155731" duration="4940000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574979633857</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Improved gauge">
+      <created>1574980358624</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574980358624</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +171,7 @@
     <MESSAGE value="Added labels to Gauge" />
     <MESSAGE value="Add cursor: pointer; to main search" />
     <MESSAGE value="Added transition to submit butto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transition to submit butto" />
+    <MESSAGE value="Improved gauge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved gauge" />
   </component>
 </project>
