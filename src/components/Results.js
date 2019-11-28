@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import HashLoader from "react-spinners/HashLoader";
-import { Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Gauge from "./Gauge";
@@ -39,7 +39,11 @@ const useStyles = makeStyles(theme => ({
   },
   label: {
     position: "absolute",
-    top: 190
+    top: 160,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column"
   },
   value: {
     fontSize: "80pt",
@@ -48,13 +52,27 @@ const useStyles = makeStyles(theme => ({
   },
   emoji: {
     textAlign: "center",
-    marginBottom: 0
+    marginBottom: 20
   },
   negative: {
     fontSize: "50pt",
     position: "absolute",
     bottom: 50,
     right: 70
+  },
+  lowest: {
+    position: "absolute",
+    left: -100,
+    top: 320,
+    fontSize: "30pt",
+    color: "#ffc6c2"
+  },
+  highest: {
+    position: "absolute",
+    right: -80,
+    top: 320,
+    fontSize: "30pt",
+    color: "#b6ffb5"
   }
 }));
 
@@ -95,7 +113,11 @@ export default function Results({ term }) {
   let emoji;
   let color;
   let sentiment;
-  if (value > 25) {
+  if (value > 50) {
+    emoji = "😊";
+    color = "#42ff55";
+    sentiment = "Overwhelmingly Positive";
+  } else if (value > 25) {
     emoji = "😊";
     color = "#42ff55";
     sentiment = "Very Positive";
@@ -111,10 +133,14 @@ export default function Results({ term }) {
     emoji = "😠";
     color = "#f7aa38";
     sentiment = "Negative";
-  } else {
+  } else if (value > -50) {
     emoji = "😡";
     color = "#ef4655";
     sentiment = "Very Negative";
+  } else {
+    emoji = "😡";
+    color = "#ef4655";
+    sentiment = "Overwhelmingly Negative";
   }
   let formattedValue;
   if (value < 0) {
@@ -140,8 +166,12 @@ export default function Results({ term }) {
   return (
     <Container className={classes.resultsWrapper}>
       <Twemoji className={classes.label} options={{ className: "twemoji" }}>
+        <Typography className={classes.lowest}>-100</Typography>
+        <Typography className={classes.highest}>100</Typography>
         <p className={classes.emoji}>{emoji}</p>
-        <p style={{ margin: 0, textAlign: "center" }}>{sentiment}</p>
+        <Typography style={{ margin: 0, textAlign: "center" }}>
+          {sentiment}
+        </Typography>
         {formattedValue}
       </Twemoji>
       <Gauge
