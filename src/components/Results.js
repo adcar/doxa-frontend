@@ -86,11 +86,12 @@ export default function Results({ term }) {
     if (error.graphQLErrors[0]) {
       return <p>Error: {error.graphQLErrors[0].message}</p>;
     } else {
-      return <p>An unknown error has occured</p>;
+      return <p>An unknown error has occurred</p>;
     }
   }
 
   const value = Math.round(data.sentiment.averageWeighedPolarity * 100);
+
   let emoji;
   let color;
   let sentiment;
