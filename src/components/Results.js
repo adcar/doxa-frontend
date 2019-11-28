@@ -56,20 +56,19 @@ const useStyles = makeStyles(theme => ({
   },
   negative: {
     fontSize: "50pt",
-    position: "absolute",
-    bottom: 50,
-    right: 70
+    position: "relative",
+    bottom: 25
   },
   lowest: {
     position: "absolute",
-    left: -100,
+    left: -130,
     top: 320,
     fontSize: "30pt",
     color: "#ffc6c2"
   },
   highest: {
     position: "absolute",
-    right: -80,
+    right: -110,
     top: 320,
     fontSize: "30pt",
     color: "#b6ffb5"
