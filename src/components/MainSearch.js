@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   submit: {
+    cursor: "pointer",
     marginTop: theme.spacing(4),
     height: 60,
     position: "absolute",
