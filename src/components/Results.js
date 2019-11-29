@@ -3,10 +3,14 @@ import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import HashLoader from "react-spinners/HashLoader";
 import Typography from "@material-ui/core/Typography";
+import dynamic from "next/dynamic";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import "./twemoji.css";
 import SentimentGauge from "./SentimentGauge";
+
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const GET_SENTIMENT = gql`
   query GetSentiment($term: String!) {
@@ -83,6 +87,25 @@ export default function Results({ term }) {
         </Typography>
       </Typography>
       <SentimentGauge value={value} />
+      <Chart
+        type="donut"
+        series={[44, 55, 41, 17, 15]}
+        options={{
+          responsive: [
+            {
+              breakpoint: 480,
+              options: {
+                chart: {
+                  width: 200
+                },
+                legend: {
+                  position: "bottom"
+                }
+              }
+            }
+          ]
+        }}
+      />
     </Container>
   );
 }

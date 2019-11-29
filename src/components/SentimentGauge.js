@@ -1,7 +1,7 @@
+import React from "react";
 import Twemoji from "react-twemoji";
 import Typography from "@material-ui/core/Typography";
 import Gauge from "./Gauge";
-import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
@@ -75,8 +75,8 @@ const useStyles = makeStyles(theme => ({
 export default function SentimentGauge({ value }) {
   const classes = useStyles();
   let emoji;
-  let color;
   let sentiment;
+  let color;
   if (value > 50) {
     emoji = "😊";
     color = "#42ff55";
@@ -143,7 +143,23 @@ export default function SentimentGauge({ value }) {
         value={value}
         min={-100}
         max={100}
-        color={() => color}
+        color={value => {
+          if (value > 50) {
+            return "#42ff55";
+          } else if (value > 25) {
+            return "#42ff55";
+          } else if (value > 4) {
+            return "#5ee432";
+          } else if (value > -4) {
+            return "#fffa50";
+          } else if (value > -25) {
+            return "#f7aa38";
+          } else if (value > -50) {
+            return "#ef4655";
+          } else {
+            return "#ef4655";
+          }
+        }}
       />
     </div>
   );
