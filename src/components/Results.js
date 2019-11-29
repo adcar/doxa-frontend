@@ -3,19 +3,20 @@ import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import HashLoader from "react-spinners/HashLoader";
 import Typography from "@material-ui/core/Typography";
-import dynamic from "next/dynamic";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
 import "./twemoji.css";
 import SentimentGauge from "./SentimentGauge";
-
-
-const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+import TweetCountPie from "./TweetCountPie";
 
 const GET_SENTIMENT = gql`
   query GetSentiment($term: String!) {
     sentiment(term: $term) {
       averageWeighedPolarity
+      negativeTweetsCount
+      neutralTweetsCount
+      positiveTweetsCount
     }
   }
 `;
@@ -76,7 +77,19 @@ export default function Results({ term }) {
     }
   }
 
-  const value = Math.round(data.sentiment.averageWeighedPolarity * 100);
+  const {
+    averageWeighedPolarity,
+    positiveTweetsCount,
+    negativeTweetsCount,
+    neutralTweetsCount
+  } = data.sentiment;
+  const value = Math.round(averageWeighedPolarity * 100);
+
+  const chartProps = {
+    positiveTweetsCount,
+    negativeTweetsCount,
+    neutralTweetsCount
+  };
 
   return (
     <Container className={classes.resultsWrapper}>
@@ -86,26 +99,15 @@ export default function Results({ term }) {
           "{term}"
         </Typography>
       </Typography>
-      <SentimentGauge value={value} />
-      <Chart
-        type="donut"
-        series={[44, 55, 41, 17, 15]}
-        options={{
-          responsive: [
-            {
-              breakpoint: 480,
-              options: {
-                chart: {
-                  width: 200
-                },
-                legend: {
-                  position: "bottom"
-                }
-              }
-            }
-          ]
-        }}
-      />
+      <Grid container justify="center">
+        <Grid item md={6}>
+          <SentimentGauge value={value} />
+        </Grid>
+
+        <Grid item md={6}>
+          <TweetCountPie {...chartProps} />
+        </Grid>
+      </Grid>
     </Container>
   );
 }

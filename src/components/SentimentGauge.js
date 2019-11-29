@@ -2,7 +2,7 @@ import React from "react";
 import Twemoji from "react-twemoji";
 import Typography from "@material-ui/core/Typography";
 import Gauge from "./Gauge";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   label: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     top: 200,
     position: "absolute",
 
-    color: "#ffc6c2"
+    color: theme.palette.secondary.light
   },
   highest: {
     [theme.breakpoints.up("sm")]: {
@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     top: 200,
     position: "absolute",
 
-    color: "#b6ffb5"
+    color: theme.palette.primary.light
   },
   root: {
     display: "flex",
@@ -74,36 +74,37 @@ const useStyles = makeStyles(theme => ({
 
 export default function SentimentGauge({ value }) {
   const classes = useStyles();
+  const theme = useTheme();
   let emoji;
   let sentiment;
   let color;
   if (value > 50) {
     emoji = "😊";
-    color = "#42ff55";
+    color = theme.palette.primary.light;
     sentiment = "Overwhelmingly Positive";
   } else if (value > 25) {
     emoji = "😊";
-    color = "#42ff55";
+    color = theme.palette.primary.main;
     sentiment = "Very Positive";
   } else if (value > 4) {
     emoji = "☺️";
-    color = "#5ee432";
+    color = theme.palette.primary.dark;
     sentiment = "Positive";
   } else if (value > -4) {
     emoji = "😑";
-    color = "#fffa50";
+    color = theme.palette.neutral.main;
     sentiment = "Neutral";
   } else if (value > -25) {
     emoji = "😠";
-    color = "#f7aa38";
+    color = theme.palette.secondary.dark;
     sentiment = "Negative";
   } else if (value > -50) {
     emoji = "😡";
-    color = "#ef4655";
+    color = theme.palette.secondary.main;
     sentiment = "Very Negative";
   } else {
     emoji = "😡";
-    color = "#ef4655";
+    color = theme.palette.secondary.light;
     sentiment = "Overwhelmingly Negative";
   }
   let formattedValue;
@@ -145,19 +146,19 @@ export default function SentimentGauge({ value }) {
         max={100}
         color={value => {
           if (value > 50) {
-            return "#42ff55";
+            return theme.palette.primary.light;
           } else if (value > 25) {
-            return "#42ff55";
+            return theme.palette.primary.main;
           } else if (value > 4) {
-            return "#5ee432";
+            return theme.palette.primary.dark;
           } else if (value > -4) {
-            return "#fffa50";
+            return theme.palette.neutral.main;
           } else if (value > -25) {
-            return "#f7aa38";
+            return theme.palette.secondary.dark;
           } else if (value > -50) {
-            return "#ef4655";
+            return theme.palette.secondary.main;
           } else {
-            return "#ef4655";
+            return theme.palette.secondary.light;
           }
         }}
       />
