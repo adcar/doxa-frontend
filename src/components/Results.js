@@ -57,12 +57,15 @@ export default function Results({ term }) {
         <HashLoader color={theme.palette.primary.main} size={150} />
         <Typography
           gutterBottom
-          variant="h2"
-          color="primary"
+          variant="h3"
+          component="h1"
           align="center"
           className={classes.spinnerLabel}
         >
-          Analyzing Tweets
+          Analyzing Tweets for term{" "}
+          <Typography variant="inherit" color="primary">
+            "{term}"
+          </Typography>
         </Typography>
         <Typography variant="subtitle1" align="center">
           This usually takes about 5 seconds
@@ -90,7 +93,14 @@ export default function Results({ term }) {
     negativeTweetsCount,
     neutralTweetsCount
   };
-
+  const labelProps = {
+    variant: "h4",
+    component: "h2",
+    align: "center",
+    style: {
+      maxWidth: 500
+    }
+  };
   return (
     <Container className={classes.resultsWrapper}>
       <Typography variant="h3" component="h1" align="center" gutterBottom>
@@ -99,12 +109,14 @@ export default function Results({ term }) {
           "{term}"
         </Typography>
       </Typography>
-      <Grid container justify="center">
+      <Grid container justify="space-between">
         <Grid item md={6}>
+          <Typography {...labelProps}>Sentiment</Typography>
           <SentimentGauge value={value} />
         </Grid>
 
         <Grid item md={6}>
+          <Typography {...labelProps}>Tweets</Typography>
           <TweetCountPie {...chartProps} />
         </Grid>
       </Grid>
