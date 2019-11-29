@@ -3,9 +3,12 @@ import PieChart from "react-minimal-pie-chart";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    width: 650
+    [theme.breakpoints.up("sm")]: {
+      width: 600
+    },
+    width: 400
   }
 }));
 
