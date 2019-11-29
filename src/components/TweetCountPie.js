@@ -44,13 +44,11 @@ export default function TweetCountPie({
           value: negativeTweetsCount
         }
       ]}
-      label={({ data, dataIndex }) =>
-        `${data[dataIndex].value} ${data[dataIndex].title}`
-      }
-      labelPosition={112}
+      label
+      labelPosition={60}
       labelStyle={{
         fontFamily: theme.typography.fontFamily,
-        fontSize: "4px"
+        fontSize: "6px"
       }}
       lengthAngle={360}
       lineWidth={25}

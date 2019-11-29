@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TweetCountPie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCountPie.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1574629146225" duration="6401000" />
       <workItem from="1574793318447" duration="4000" />
       <workItem from="1574793468586" duration="16871000" />
-      <workItem from="1574966155731" duration="25799000" />
+      <workItem from="1574966155731" duration="27236000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575052444992</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Made pie chart more responsive">
+      <created>1575053289523</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1575053289523</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +251,7 @@
     <MESSAGE value="Improved colors" />
     <MESSAGE value="Alignment fixes and new labels" />
     <MESSAGE value="Added more labels and sizing fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more labels and sizing fixes" />
+    <MESSAGE value="Made pie chart more responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made pie chart more responsive" />
   </component>
 </project>
