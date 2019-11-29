@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gauge.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gauge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SentimentGauge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SentimentGauge.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +85,7 @@
       <workItem from="1574629146225" duration="6401000" />
       <workItem from="1574793318447" duration="4000" />
       <workItem from="1574793468586" duration="16871000" />
-      <workItem from="1574966155731" duration="10030000" />
+      <workItem from="1574966155731" duration="11038000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574980966749</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added navbar with sentiment search">
+      <created>1574997737511</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574997737511</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +187,7 @@
     <MESSAGE value="Added transition to submit butto" />
     <MESSAGE value="Improved gauge" />
     <MESSAGE value="Abstract SentimentGauge into new component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abstract SentimentGauge into new component" />
+    <MESSAGE value="Added navbar with sentiment search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added navbar with sentiment search" />
   </component>
 </project>

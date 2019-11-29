@@ -6,15 +6,21 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   label: {
+    [theme.breakpoints.up("sm")]: {
+      top: 200
+    },
+    top: 130,
     position: "absolute",
-    top: 160,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column"
   },
   value: {
-    fontSize: "80pt",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "80pt"
+    },
+    fontSize: "40pt",
     marginTop: 0,
     textAlign: "center"
   },
@@ -23,22 +29,38 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(2)
   },
   negative: {
-    fontSize: "50pt",
-    position: "relative",
-    bottom: 25
+    [theme.breakpoints.up("sm")]: {
+      bottom: 25,
+      fontSize: "50pt"
+    },
+    bottom: 7,
+    fontSize: "30pt",
+    position: "relative"
   },
   lowest: {
+    [theme.breakpoints.up("sm")]: {
+      top: 300,
+      fontSize: "30pt",
+      left: -130
+    },
+    left: -90,
+    fontSize: "20pt",
+    top: 200,
     position: "absolute",
-    left: -130,
-    top: 320,
-    fontSize: "30pt",
+
     color: "#ffc6c2"
   },
   highest: {
+    [theme.breakpoints.up("sm")]: {
+      top: 300,
+      fontSize: "30pt",
+      right: -110
+    },
+    right: -70,
+    fontSize: "20pt",
+    top: 200,
     position: "absolute",
-    right: -110,
-    top: 320,
-    fontSize: "30pt",
+
     color: "#b6ffb5"
   },
   root: {
@@ -86,7 +108,7 @@ export default function SentimentGauge({ value }) {
   let formattedValue;
   if (value < 0) {
     formattedValue = (
-      <div>
+      <div className={classes.valueWrapper}>
         <span className={classes.negative} style={{ color: color }}>
           -
         </span>
@@ -97,7 +119,7 @@ export default function SentimentGauge({ value }) {
     );
   } else {
     formattedValue = (
-      <div>
+      <div className={classes.valueWrapper}>
         <span className={classes.value} style={{ color: color }}>
           {value}
         </span>

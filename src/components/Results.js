@@ -54,11 +54,12 @@ export default function Results({ term }) {
           gutterBottom
           variant="h2"
           color="primary"
+          align="center"
           className={classes.spinnerLabel}
         >
           Analyzing Tweets
         </Typography>
-        <Typography variant="subtitle1">
+        <Typography variant="subtitle1" align="center">
           This usually takes about 5 seconds
         </Typography>
       </Container>
