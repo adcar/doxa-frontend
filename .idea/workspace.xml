@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gauge.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gauge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SentimentGauge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SentimentGauge.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +85,7 @@
       <workItem from="1574629146225" duration="6401000" />
       <workItem from="1574793318447" duration="4000" />
       <workItem from="1574793468586" duration="16871000" />
-      <workItem from="1574966155731" duration="11038000" />
+      <workItem from="1574966155731" duration="11978000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574997737511</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made Sentiment Gauge responsive">
+      <created>1574998841140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574998841140</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +195,7 @@
     <MESSAGE value="Improved gauge" />
     <MESSAGE value="Abstract SentimentGauge into new component" />
     <MESSAGE value="Added navbar with sentiment search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added navbar with sentiment search" />
+    <MESSAGE value="Made Sentiment Gauge responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Sentiment Gauge responsive" />
   </component>
 </project>

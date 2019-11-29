@@ -7,9 +7,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   label: {
     [theme.breakpoints.up("sm")]: {
-      top: 200
+      top: 130
     },
-    top: 130,
+    top: 60,
     position: "absolute",
     display: "flex",
     justifyContent: "center",
@@ -67,7 +67,8 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    position: "relative"
   }
 }));
 

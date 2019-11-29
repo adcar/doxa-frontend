@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import NavSearch from "./NavSearch";
+import Link from "next/link";
 
 const useStyles = makeStyles(theme => ({
   nav: {
@@ -10,7 +11,8 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
-    boxShadow: `0px 4px 14px ${theme.shadowColor}`
+    boxShadow: `0px 4px 14px ${theme.shadowColor}`,
+    marginBottom: theme.spacing(4)
   }
 }));
 
@@ -30,7 +32,15 @@ export default function Navbar() {
   } else {
     return (
       <nav className={classes.nav}>
-        <Typography>Doxa</Typography>
+        <Link href="/">
+          <Typography
+            style={{
+              cursor: "pointer"
+            }}
+          >
+            Doxa
+          </Typography>
+        </Link>
         <NavSearch />
       </nav>
     );
