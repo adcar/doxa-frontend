@@ -41,6 +41,12 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center"
+  },
+  gauge: {
+    [theme.breakpoints.up("lg")]: {
+      margin: 0
+    },
+    marginBottom: theme.spacing(8)
   }
 }));
 
@@ -96,27 +102,35 @@ export default function Results({ term }) {
   const labelProps = {
     variant: "h4",
     component: "h2",
-    align: "center",
-    style: {
-      maxWidth: 500
-    }
+    align: "center"
   };
   return (
     <Container className={classes.resultsWrapper}>
-      <Typography variant="h3" component="h1" align="center" gutterBottom>
+      <Typography
+        variant="h3"
+        component="h1"
+        align="center"
+        style={{
+          marginBottom: theme.spacing(8)
+        }}
+      >
         Sentiment results for{" "}
         <Typography color="primary" variant="inherit">
           "{term}"
         </Typography>
       </Typography>
-      <Grid container justify="space-between">
-        <Grid item md={6}>
-          <Typography {...labelProps}>Sentiment</Typography>
+      <Grid container justify="center">
+        <Grid item lg={6} className={classes.gauge}>
+          <Typography {...labelProps} style={{ maxWidth: 500 }}>
+            Sentiment
+          </Typography>
           <SentimentGauge value={value} />
         </Grid>
 
-        <Grid item md={6}>
-          <Typography {...labelProps}>Tweets</Typography>
+        <Grid item lg={6} className={classes.gauge}>
+          <Typography {...labelProps} style={{ maxWidth: 700 }}>
+            Tweets
+          </Typography>
           <TweetCountPie {...chartProps} />
         </Grid>
       </Grid>

@@ -5,7 +5,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: 500
+    width: 650
   }
 }));
 
@@ -23,36 +23,43 @@ export default function TweetCountPie({
       animationDuration={1000}
       animationEasing="ease-out"
       cx={50}
-      cy={50}
+      cy={35}
       data={[
         {
           color: theme.palette.primary.main,
-          title: "Positive Tweets",
+          title: "Positive",
           value: positiveTweetsCount
         },
         {
           color: theme.palette.neutral.main,
-          title: "Neutral Tweets",
+          title: "Neutral",
           value: neutralTweetsCount
         },
         {
           color: theme.palette.secondary.main,
-          title: "Negative Tweets",
+          title: "Negative",
           value: negativeTweetsCount
         }
       ]}
-      label={false}
-      labelPosition={50}
+      label={({ data, dataIndex }) =>
+        `${data[dataIndex].value} ${data[dataIndex].title}`
+      }
+      labelPosition={112}
+      labelStyle={{
+        fontFamily: theme.typography.fontFamily,
+        fontSize: "4px"
+      }}
       lengthAngle={360}
       lineWidth={25}
       onClick={undefined}
       onMouseOut={undefined}
       onMouseOver={undefined}
       paddingAngle={0}
-      radius={40}
+      radius={30}
       ratio={1}
       rounded
       startAngle={0}
+      viewBoxSize={[140, 100]}
     />
   );
 }
