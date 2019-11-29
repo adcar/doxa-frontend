@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "space-around",
     boxShadow: `0px 4px 14px ${theme.shadowColor}`,
-    marginBottom: theme.spacing(4)
+    marginBottom: theme.spacing(8)
   }
 }));
 

@@ -76,6 +76,12 @@ export default function Results({ term }) {
 
   return (
     <Container className={classes.resultsWrapper}>
+      <Typography variant="h3" component="h1" align="center" gutterBottom>
+        Sentiment results for{" "}
+        <Typography color="primary" variant="inherit">
+          "{term}"
+        </Typography>
+      </Typography>
       <SentimentGauge value={value} />
     </Container>
   );
