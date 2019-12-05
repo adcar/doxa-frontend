@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TweetCountPie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCountPie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SentimentGauge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SentimentGauge.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +24,11 @@
   <component name="ProjectId" id="1Tvhtv5oq9lLgEQ3ogEYECGntZk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -49,22 +52,22 @@
       <recent name="$PROJECT_DIR$/pages/results" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Next" type="NodeJSConfigurationType" path-to-js-file="node_modules/next/dist/bin/next" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -85,7 +88,9 @@
       <workItem from="1574629146225" duration="6401000" />
       <workItem from="1574793318447" duration="4000" />
       <workItem from="1574793468586" duration="16871000" />
-      <workItem from="1574966155731" duration="27236000" />
+      <workItem from="1574966155731" duration="27863000" />
+      <workItem from="1575563581930" duration="65000" />
+      <workItem from="1575563660643" duration="694000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -213,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575053289523</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added padding right to NavSearch component in order to allow the user to view what they are typing in full.">
+      <created>1575062180903</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575062180903</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +264,13 @@
     <MESSAGE value="Alignment fixes and new labels" />
     <MESSAGE value="Added more labels and sizing fixes" />
     <MESSAGE value="Made pie chart more responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made pie chart more responsive" />
+    <MESSAGE value="Added padding right to NavSearch component in order to allow the user to view what they are typing in full." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added padding right to NavSearch component in order to allow the user to view what they are typing in full." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="641" y="253" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575563642003">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="641" y="253" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575563642003" />
   </component>
 </project>

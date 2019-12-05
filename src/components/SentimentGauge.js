@@ -81,7 +81,7 @@ export default function SentimentGauge({ value }) {
   let color;
   if (value > 50) {
     emoji = "😊";
-    color = theme.palette.primary.light;
+    color = theme.palette.primary.main;
     sentiment = "Overwhelmingly Positive";
   } else if (value > 25) {
     emoji = "😊";
@@ -89,7 +89,7 @@ export default function SentimentGauge({ value }) {
     sentiment = "Very Positive";
   } else if (value > 4) {
     emoji = "☺️";
-    color = theme.palette.primary.dark;
+    color = theme.palette.primary.main;
     sentiment = "Positive";
   } else if (value > -4) {
     emoji = "😑";
@@ -97,7 +97,7 @@ export default function SentimentGauge({ value }) {
     sentiment = "Neutral";
   } else if (value > -25) {
     emoji = "😠";
-    color = theme.palette.secondary.dark;
+    color = theme.palette.secondary.main;
     sentiment = "Negative";
   } else if (value > -50) {
     emoji = "😡";
@@ -105,7 +105,7 @@ export default function SentimentGauge({ value }) {
     sentiment = "Very Negative";
   } else {
     emoji = "😡";
-    color = theme.palette.secondary.light;
+    color = theme.palette.secondary.main;
     sentiment = "Overwhelmingly Negative";
   }
   let formattedValue;
@@ -147,19 +147,19 @@ export default function SentimentGauge({ value }) {
         max={100}
         color={value => {
           if (value > 50) {
-            return theme.palette.primary.light;
+            return theme.palette.primary.main;
           } else if (value > 25) {
             return theme.palette.primary.main;
           } else if (value > 4) {
-            return theme.palette.primary.dark;
+            return theme.palette.primary.main;
           } else if (value > -4) {
             return theme.palette.neutral.main;
           } else if (value > -25) {
-            return theme.palette.secondary.dark;
+            return theme.palette.secondary.main;
           } else if (value > -50) {
             return theme.palette.secondary.main;
           } else {
-            return theme.palette.secondary.light;
+            return theme.palette.secondary.main;
           }
         }}
       />
