@@ -122,7 +122,7 @@ export default function Results({ term }) {
       <Grid container justify="center">
         <Grid item lg={6} className={classes.gauge}>
           <Typography {...labelProps} style={{ maxWidth: 500 }}>
-            Sentiment
+            Sentiment Score
           </Typography>
           <SentimentGauge value={value} />
         </Grid>
