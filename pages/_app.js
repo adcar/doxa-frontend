@@ -9,6 +9,7 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import "./empty.css";
 import fetch from "isomorphic-fetch";
 import Navbar from "../src/components/Navbar";
+import Footer from "../src/components/Footer";
 
 const client = new ApolloClient({
   uri: "https://doxa-api.herokuapp.com/graphql"
@@ -36,7 +37,15 @@ export default class MyApp extends App {
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <Navbar />
-            <Component {...pageProps} />
+            <main
+              style={{
+                minHeight: "calc(100vh - (70px + 64px + 48px))"
+              }}
+            >
+              <Component {...pageProps} />
+            </main>
+
+            <Footer />
           </ThemeProvider>
         </React.Fragment>
       </ApolloProvider>
