@@ -135,7 +135,7 @@ export default function SentimentGauge({ value }) {
         <Typography className={classes.lowest}>-100</Typography>
         <Typography className={classes.highest}>100</Typography>
         <p className={classes.emoji}>{emoji}</p>
-        <Typography style={{ margin: 0, textAlign: "center" }}>
+        <Typography style={{ margin: 0, textAlign: "center", color }}>
           {sentiment}
         </Typography>
         {formattedValue}

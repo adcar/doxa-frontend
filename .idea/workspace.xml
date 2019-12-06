@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TweetCountPie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCountPie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SentimentGauge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SentimentGauge.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1574793468586" duration="16871000" />
       <workItem from="1574966155731" duration="27863000" />
       <workItem from="1575563581930" duration="65000" />
-      <workItem from="1575563660643" duration="11569000" />
+      <workItem from="1575563660643" duration="13133000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -261,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575601215236</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Increased radius of pie chart">
+      <created>1575601714683</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1575601714683</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,17 +312,18 @@
     <MESSAGE value="Changed &quot;Sentiment&quot; to &quot;Sentiment Score&quot;" />
     <MESSAGE value="Added an inner label to pie chart" />
     <MESSAGE value="Fix placement of lowest and highest on gauge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix placement of lowest and highest on gauge" />
+    <MESSAGE value="Increased radius of pie chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Increased radius of pie chart" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="253" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575563642003">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="641" y="253" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575563642003" />
-    <state x="372" y="-37" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1575601215172">
+    <state x="370" y="-55" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1575601714607">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="372" y="-37" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575601215172" />
+    <state x="370" y="-55" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575601714607" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom" timestamp="1575565995645">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -337,10 +344,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="154" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575565858311" />
-    <state x="551" y="239" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575568398462">
+    <state x="549" y="221" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575601717414">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="551" y="239" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575568398462" />
+    <state x="549" y="221" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575601717414" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
