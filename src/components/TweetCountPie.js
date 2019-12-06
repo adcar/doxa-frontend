@@ -10,7 +10,8 @@ const useStyles = makeStyles(theme => ({
     position: "relative",
     display: "flex",
     alignItems: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+    marginTop: theme.spacing(2)
   },
   chart: {
     [theme.breakpoints.up("sm")]: {
@@ -98,7 +99,7 @@ export default function TweetCountPie({
         onMouseOut={undefined}
         onMouseOver={undefined}
         paddingAngle={0}
-        radius={30}
+        radius={34}
         ratio={1}
         rounded
         startAngle={0}
