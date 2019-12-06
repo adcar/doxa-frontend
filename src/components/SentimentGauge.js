@@ -41,9 +41,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("sm")]: {
       top: 300,
       fontSize: "30pt",
-      left: -130
+      left: -100
     },
-    left: -90,
+    left: -20,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
@@ -54,9 +54,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("sm")]: {
       top: 300,
       fontSize: "30pt",
-      right: -110
+      right: -80
     },
-    right: -70,
+    right: -10,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
