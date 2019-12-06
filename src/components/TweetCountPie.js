@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacing(1)
   },
   chart: {
     [theme.breakpoints.up("sm")]: {

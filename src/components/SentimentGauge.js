@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: "30pt",
       left: -100
     },
-    left: -20,
+    left: -70,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: "30pt",
       right: -80
     },
-    right: -10,
+    right: -60,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
@@ -135,7 +135,7 @@ export default function SentimentGauge({ value }) {
         <Typography className={classes.lowest}>-100</Typography>
         <Typography className={classes.highest}>100</Typography>
         <p className={classes.emoji}>{emoji}</p>
-        <Typography style={{ margin: 0, textAlign: "center", color }}>
+        <Typography style={{ margin: 0, textAlign: "center" }}>
           {sentiment}
         </Typography>
         {formattedValue}
