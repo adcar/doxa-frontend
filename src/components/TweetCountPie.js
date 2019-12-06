@@ -7,7 +7,10 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 1200
+    position: "relative",
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column"
   },
   chart: {
     [theme.breakpoints.up("sm")]: {
@@ -18,13 +21,25 @@ const useStyles = makeStyles(theme => ({
   legend: {
     margin: "0 auto",
     [theme.breakpoints.up("sm")]: {
-      width: 350
+      width: 400
     },
-    width: 100
+    width: 120
   },
   legendItem: {
     display: "flex",
     alignItems: "center"
+  },
+  legendLabel: {
+    marginLeft: theme.spacing(1)
+  },
+  insideText: {
+    position: "absolute",
+    [theme.breakpoints.up("sm")]: {
+      top: 170
+    },
+    top: 110,
+
+    color: theme.palette.primary.main
   }
 }));
 
@@ -35,8 +50,18 @@ export default function TweetCountPie({
 }) {
   const classes = useStyles();
   const theme = useTheme();
+  const totalTweets =
+    positiveTweetsCount + neutralTweetsCount + negativeTweetsCount;
   return (
-    <div>
+    <div className={classes.root}>
+      <div className={classes.insideText}>
+        <Typography variant="h2" color="inherit" align="center">
+          {totalTweets}
+        </Typography>
+        <Typography variant="subtitle1" color="inherit" align="center">
+          Total Tweets
+        </Typography>
+      </div>
       <PieChart
         className={classes.chart}
         animate={true}
@@ -97,7 +122,9 @@ export default function TweetCountPie({
           }}
         >
           <LensIcon color="inherit" />{" "}
-          <Typography align="center">Positive</Typography>
+          <Typography align="center" className={classes.legendLabel}>
+            Positive
+          </Typography>
         </Grid>
         <Grid
           item
@@ -108,7 +135,8 @@ export default function TweetCountPie({
             color: theme.palette.neutral.main
           }}
         >
-          <LensIcon color="inherit" /> <Typography>Neutral</Typography>
+          <LensIcon color="inherit" />{" "}
+          <Typography className={classes.legendLabel}>Neutral</Typography>
         </Grid>
         <Grid
           item
@@ -119,7 +147,8 @@ export default function TweetCountPie({
             color: theme.palette.secondary.main
           }}
         >
-          <LensIcon color="inherit" /> <Typography>Negative</Typography>
+          <LensIcon color="inherit" />{" "}
+          <Typography className={classes.legendLabel}>Negative</Typography>
         </Grid>
       </Grid>
     </div>
