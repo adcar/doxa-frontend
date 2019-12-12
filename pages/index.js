@@ -1,8 +1,6 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import MuiLink from "@material-ui/core/Link";
 import ReactRotatingText from "react-rotating-text";
 import MainSearch from "../src/components/MainSearch";
 import splash from "../public/splash.svg";
@@ -29,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: `url(${splash})`,
     backgroundSize: `70vw auto`,
     backgroundRepeat: "no-repeat",
-    backgroundColor: theme.bg,
+    backgroundColor: "white",
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-start"

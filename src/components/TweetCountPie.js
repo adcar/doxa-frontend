@@ -88,10 +88,12 @@ export default function TweetCountPie({
           }
         ]}
         label
-        labelPosition={60}
+        labelPosition={87}
         labelStyle={{
           fontFamily: theme.typography.fontFamily,
-          fontSize: "6px"
+          fontSize: "6px",
+          color: "#ffffff",
+          fill: "#ffffff"
         }}
         lengthAngle={360}
         lineWidth={25}
