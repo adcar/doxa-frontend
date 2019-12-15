@@ -27,5 +27,15 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./test/setupTests.js"
+    ]
   }
 }
