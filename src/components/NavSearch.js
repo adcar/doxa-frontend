@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     height: 30,
     padding: "0px 15px",
     position: "absolute",
-    left: 198,
+    right: 0,
     transition: "all 0.1s ease-out",
     borderRadius: theme.radius,
     border: "none",
