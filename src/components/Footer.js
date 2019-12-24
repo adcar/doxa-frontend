@@ -45,7 +45,7 @@ export default function Footer() {
               <Typography variant="h6">Contact</Typography>
             </Grid>
             <Grid item sm={6}>
-              <Link href="/about-us" className={classes.link}>
+              <Link href="/about" className={classes.link}>
                 About Us
               </Link>
             </Grid>
