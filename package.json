@@ -9,7 +9,7 @@
     "@zeit/next-css": "^1.0.1",
     "apollo-boost": "^0.4.4",
     "babel-plugin-inline-import": "^3.0.0",
-    "clsx": "latest",
+    "clsx": "^1.0.4",
     "graphql": "^14.5.8",
     "isomorphic-fetch": "^2.2.1",
     "next": "latest",
