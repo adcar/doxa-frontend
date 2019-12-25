@@ -11,7 +11,8 @@ export default function Attribution() {
   return (
     <Container>
      <Typography variant="h3" component="h3" gutterBottom>Attribution</Typography>
-     <Typography><Link href="/">Splash image</Link> <Link href="https://freepik.com">designed by Freepik</Link> and modified by Rahavee RV</Typography>
+     <Typography gutterBottom><Link href="/">Splash image</Link> <Link href="https://freepik.com">designed by Freepik</Link> and modified by Rahavee RV</Typography>
+     <Typography gutterBottom>Doxa uses <Link href="https://github.com/cjhutto/vaderSentiment">VADER Sentiment Analysis</Link></Typography>
     </Container>
   );
 }
