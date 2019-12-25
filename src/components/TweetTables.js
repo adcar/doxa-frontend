@@ -1,75 +1,83 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import './react-tabs.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
-const useStyles = makeStyles(theme => ({
-    root: {
-        borderRadius: theme.radius,
-        boxShadow: theme.purpleShadow,
-    },
-    tabList: {
-        paddingLeft: theme.spacing(4),
-        paddingRight: theme.spacing(4),
-        backgroundColor: theme.palette.primary.main,
-        borderTopLeftRadius: theme.radius,
-        borderTopRightRadius: theme.radius
-    
-    },
-    tab: {
-        display: "inline-block",
-        marginTop: theme.spacing(1),
-        borderBottom: "none",
-        listStyle: "none",
-        padding: `15px 20px`,
-        cursor: "pointer",
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-        color: "white"
-    },
-    selectedTab: {
-        backgroundColor: "white",
-        color: "black"
-    },
-    panel: {
-        display: "block",
-        padding: `${theme.spacing(2)}px ${theme.spacing(4)}px` 
-    }
-}))
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-
-
-export default function TweetTables() {
-    const classes = useStyles();
-    const tabProps = {
-        selectedClassName: classes.selectedTab,
-        className: classes.tab,
-    }
-    return (
-        <div className={classes.root}>
-        <Tabs>
-            <TabList className={classes.tabList}>
-                <Tab {...tabProps}>All Tweets</Tab>
-                <Tab {...tabProps}>Positive Tweets</Tab>
-                <Tab {...tabProps}>Negative Tweets</Tab>
-                <Tab {...tabProps}>Neutral Tweets</Tab>
-            </TabList>
-
-            <TabPanel selectedClassName={classes.panel}>
-                <h2>Any content 1</h2>
-            </TabPanel>
-            <TabPanel selectedClassName={classes.panel}>
-                <h2>Any content 2</h2>
-            </TabPanel>
-             <TabPanel selectedClassName={classes.panel}>
-                <h2>Any content 3</h2>
-            </TabPanel>
-             <TabPanel selectedClassName={classes.panel}>
-                <h2>Any content 4</h2>
-            </TabPanel>
-        </Tabs>
-        </div>
-        
-    )
+  return (
+    <Typography
+      component="div"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box p={3}>{children}</Box>}
+    </Typography>
+  );
 }
 
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    borderRadius: theme.radius,
+    boxShadow: theme.shadows[4]
+  },
+  appBar: {
+      borderTopLeftRadius: theme.radius,
+      borderTopRightRadius: theme.radius
+  }
+}));
+
+export default function SimpleTabs() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" className={classes.appBar}>
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+          <Tab label="All Tweets" {...a11yProps(0)} />
+          <Tab label="Positive Tweets" {...a11yProps(1)} />
+          <Tab label="Negative Tweets" {...a11yProps(2)} />
+          <Tab label="Neutral Tweets" {...a11yProps(3)} />
+        </Tabs>
+      </AppBar>
+      <TabPanel value={value} index={0}>
+        Item One
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Item Two
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Item Three
+      </TabPanel>
+        <TabPanel value={value} index={3}>
+        Item Four
+      </TabPanel>
+    </div>
+  );
+}
