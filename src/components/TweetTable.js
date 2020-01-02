@@ -11,7 +11,6 @@ import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -58,7 +57,7 @@ const headCells = [
   { id: "retweets", numeric: true, disablePadding: false, label: "Retweets" }
 ];
 function EnhancedTableHead(props) {
-  const { classes, order, orderBy, rowCount, onRequestSort } = props;
+  const { classes, order, orderBy, onRequestSort } = props;
   const createSortHandler = property => event => {
     onRequestSort(event, property);
   };
@@ -77,9 +76,12 @@ function EnhancedTableHead(props) {
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : "asc"}
               onClick={createSortHandler(headCell.id)}
-              className={classes.headCell}
-              style={{
-                color: "white"
+              classes={{
+                root: classes.headCell,
+                active: classes.headCellActive,
+                icon: classes.headCellIcon,
+                iconDirectionDesc: classes.headCellIconDesc,
+                iconDirectionAsc: classes.headCellIconAsc
               }}
             >
               {headCell.label}
@@ -135,7 +137,7 @@ const EnhancedTableToolbar = props => {
       className={clsx(classes.root, {
         [classes.highlight]: numSelected > 0
       })}
-    ></Toolbar>
+    />
   );
 };
 
@@ -158,17 +160,28 @@ const useStyles = makeStyles(theme => ({
     width: 1
   },
   tableHead: {
-    backgroundColor: theme.palette.primary.main
+    backgroundColor: theme.palette.primary.main,
+    borderRadius: "50%"
   },
   headCell: {
     color: theme.palette.primary.contrastText + " !important",
     "&:hover": {
-      color: theme.palette.secondary.contrastText + " !important"
-    },
-    "&:active": {
-      color: theme.palette.secondary.contrastText + " !important"
+      color: theme.palette.primary.contrastText
     }
-  }
+  },
+  headCellIcon: {
+    color: theme.palette.primary.contrastText
+  },
+  headCellActive: {
+    color: theme.palette.primary.contrastText
+  },
+  headCellIconDesc: {
+    color: theme.palette.primary.contrastText + " !important"
+  },
+  headCellIconAsc: {
+    color: theme.palette.primary.contrastText + " !important"
+  },
+  tableContainer: {}
 }));
 
 export default function TweetTable({ tweets }) {
@@ -202,7 +215,7 @@ export default function TweetTable({ tweets }) {
   return (
     <div className={classes.root}>
       <EnhancedTableToolbar />
-      <TableContainer>
+      <TableContainer className={classes.tableContainer}>
         <Table
           className={classes.table}
           aria-labelledby="tableTitle"
