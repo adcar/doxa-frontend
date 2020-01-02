@@ -42,7 +42,7 @@ const headCells = [
   {
     id: "name",
     numeric: false,
-    disablePadding: true,
+    disablePadding: false,
     label: "Username"
   },
   { id: "content", numeric: false, disablePadding: false, label: "Content" },
@@ -68,7 +68,6 @@ function EnhancedTableHead(props) {
         {headCells.map(headCell => (
           <TableCell
             key={headCell.id}
-            align={headCell.numeric ? "right" : "left"}
             padding={headCell.disablePadding ? "none" : "default"}
             sortDirection={orderBy === headCell.id ? order : false}
           >
@@ -146,7 +145,8 @@ const useStyles = makeStyles(theme => ({
     width: "100%"
   },
   table: {
-    minWidth: 750
+    minWidth: 750,
+    borderRadius: 200
   },
   visuallyHidden: {
     border: 0,
@@ -180,8 +180,7 @@ const useStyles = makeStyles(theme => ({
   },
   headCellIconAsc: {
     color: theme.palette.primary.contrastText + " !important"
-  },
-  tableContainer: {}
+  }
 }));
 
 export default function TweetTable({ tweets }) {
@@ -215,54 +214,43 @@ export default function TweetTable({ tweets }) {
   return (
     <div className={classes.root}>
       <EnhancedTableToolbar />
-      <TableContainer className={classes.tableContainer}>
-        <Table
-          className={classes.table}
-          aria-labelledby="tableTitle"
-          size="medium"
-          aria-label="enhanced table"
-        >
-          <EnhancedTableHead
-            classes={classes}
-            order={order}
-            orderBy={orderBy}
-            onRequestSort={handleRequestSort}
-            rowCount={rows.length}
-          />
-          <TableBody>
-            {stableSort(rows, getSorting(order, orderBy))
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row, index) => {
-                const labelId = `enhanced-table-checkbox-${index}`;
-
-                return (
-                  <TableRow hover key={row.id}>
-                    <TableCell
-                      component="th"
-                      id={labelId}
-                      scope="row"
-                      padding="none"
-                    >
-                      {row.username}
-                    </TableCell>
-                    <TableCell align="right">{row.content}</TableCell>
-                    <TableCell align="right">{row.polarity}</TableCell>
-                    <TableCell align="right">
-                      {row.normalizedSentiment}
-                    </TableCell>
-                    <TableCell align="right">{row.favorites}</TableCell>
-                    <TableCell align="right">{row.retweets}</TableCell>
-                  </TableRow>
-                );
-              })}
-            {emptyRows > 0 && (
-              <TableRow style={{ height: 53 * emptyRows }}>
-                <TableCell colSpan={6} />
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <Table
+        className={classes.table}
+        aria-labelledby="tableTitle"
+        size="medium"
+        aria-label="enhanced table"
+      >
+        <EnhancedTableHead
+          classes={classes}
+          order={order}
+          orderBy={orderBy}
+          onRequestSort={handleRequestSort}
+          rowCount={rows.length}
+        />
+        <TableBody>
+          {stableSort(rows, getSorting(order, orderBy))
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map(row => {
+              return (
+                <TableRow hover key={row.id}>
+                  <TableCell component="th" scope="row">
+                    {row.username}
+                  </TableCell>
+                  <TableCell>{row.content}</TableCell>
+                  <TableCell>{row.polarity}</TableCell>
+                  <TableCell>{row.normalizedSentiment}</TableCell>
+                  <TableCell>{row.favorites}</TableCell>
+                  <TableCell>{row.retweets}</TableCell>
+                </TableRow>
+              );
+            })}
+          {emptyRows > 0 && (
+            <TableRow style={{ height: 53 * emptyRows }}>
+              <TableCell colSpan={6} />
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
       <TablePagination
         rowsPerPageOptions={[5, 10, 25]}
         component="div"

@@ -179,7 +179,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="4683000" />
+      <workItem from="1577937278889" duration="7884000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -405,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577945897115</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed coloring issue on table">
+      <created>1578001806739</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1578001806739</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Abstract SentimentGauge into new component" />
     <MESSAGE value="Added navbar with sentiment search" />
     <MESSAGE value="Made Sentiment Gauge responsive" />
     <MESSAGE value="Gave container on SentimentGauge &quot;position: relative&quot;" />
@@ -451,7 +457,8 @@
     <MESSAGE value="fixed tooltip bug" />
     <MESSAGE value="Added a top purple bar to the tweet tale" />
     <MESSAGE value="Added a top purple bar to the tweet table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a top purple bar to the tweet table" />
+    <MESSAGE value="Fixed coloring issue on table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed coloring issue on table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -462,10 +469,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="343" y="-46" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578001768920">
+    <state x="341" y="-64" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578001806663">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="343" y="-46" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578001768920" />
+    <state x="341" y="-64" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578001806663" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -538,10 +545,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="154" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575565858311" />
-    <state x="533" y="77" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1577945901172">
+    <state x="531" y="59" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578001810837">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="533" y="77" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577945901172" />
+    <state x="531" y="59" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578001810837" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -550,6 +557,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="761" y="344" width="387" height="351" key="export.test.results/0.0.1920.1080@0.0.1920.1080" timestamp="1576429832205" />
+    <state x="627" y="123" width="810" height="840" key="find.popup" timestamp="1578004288410">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="627" y="123" width="810" height="840" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578004288410" />
     <state x="667" y="300" width="576" height="439" key="git4idea.merge.GitPullDialog" timestamp="1577921560015">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
