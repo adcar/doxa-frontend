@@ -9,8 +9,7 @@ import Grid from "@material-ui/core/Grid";
 import "./twemoji.css";
 import SentimentGauge from "./SentimentGauge";
 import TweetCountPie from "./TweetCountPie";
-import TweetTables from "./TweetTables";
-
+import TweetTable from "./TweetTable";
 
 const GET_SENTIMENT = gql`
   query GetSentiment($term: String!) {
@@ -19,6 +18,18 @@ const GET_SENTIMENT = gql`
       negativeTweetsCount
       neutralTweetsCount
       positiveTweetsCount
+      tweets {
+        edges {
+          node {
+            username
+            content
+            polarity
+            normalizedSentiment
+            favorites
+            id
+          }
+        }
+      }
     }
   }
 `;
@@ -50,7 +61,6 @@ const useStyles = makeStyles(theme => ({
     },
     marginBottom: theme.spacing(8)
   }
- 
 }));
 
 export default function Results({ term }) {
@@ -137,7 +147,10 @@ export default function Results({ term }) {
           <TweetCountPie {...chartProps} />
         </Grid>
         <Grid item sm={12}>
-           <TweetTables />
+          <TweetTable
+            className={classes.TweetTables}
+            tweets={data.sentiment.tweets}
+          />
         </Grid>
       </Grid>
     </Container>
