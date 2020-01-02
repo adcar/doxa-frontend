@@ -12,9 +12,6 @@ import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
-import DeleteIcon from "@material-ui/icons/Delete";
-import FilterListIcon from "@material-ui/icons/FilterList";
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -57,7 +54,8 @@ const headCells = [
     disablePadding: false,
     label: "Sentiment"
   },
-  { id: "favorites", numeric: true, disablePadding: false, label: "Favorites" }
+  { id: "favorites", numeric: true, disablePadding: false, label: "Favorites" },
+  { id: "retweets", numeric: true, disablePadding: false, label: "Retweets" }
 ];
 function EnhancedTableHead(props) {
   const { classes, order, orderBy, rowCount, onRequestSort } = props;
@@ -67,7 +65,7 @@ function EnhancedTableHead(props) {
 
   return (
     <TableHead>
-      <TableRow>
+      <TableRow className={classes.tableHead}>
         {headCells.map(headCell => (
           <TableCell
             key={headCell.id}
@@ -79,10 +77,16 @@ function EnhancedTableHead(props) {
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : "asc"}
               onClick={createSortHandler(headCell.id)}
+              className={classes.headCell}
+              style={{
+                color: "white"
+              }}
             >
               {headCell.label}
               {orderBy === headCell.id ? (
-                <span className={classes.visuallyHidden}>
+                <span
+                  className={clsx(classes.visuallyHidden, classes.tableHead)}
+                >
                   {order === "desc" ? "sorted descending" : "sorted ascending"}
                 </span>
               ) : null}
@@ -131,21 +135,13 @@ const EnhancedTableToolbar = props => {
       className={clsx(classes.root, {
         [classes.highlight]: numSelected > 0
       })}
-    >
-      <Typography className={classes.title} variant="h6" id="tableTitle">
-        Tweets
-      </Typography>
-    </Toolbar>
+    ></Toolbar>
   );
 };
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
-  },
-  paper: {
-    width: "100%",
-    marginBottom: theme.spacing(2)
   },
   table: {
     minWidth: 750
@@ -160,6 +156,18 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     top: 20,
     width: 1
+  },
+  tableHead: {
+    backgroundColor: theme.palette.primary.main
+  },
+  headCell: {
+    color: theme.palette.primary.contrastText + " !important",
+    "&:hover": {
+      color: theme.palette.secondary.contrastText + " !important"
+    },
+    "&:active": {
+      color: theme.palette.secondary.contrastText + " !important"
+    }
   }
 }));
 
@@ -230,6 +238,7 @@ export default function TweetTable({ tweets }) {
                       {row.normalizedSentiment}
                     </TableCell>
                     <TableCell align="right">{row.favorites}</TableCell>
+                    <TableCell align="right">{row.retweets}</TableCell>
                   </TableRow>
                 );
               })}

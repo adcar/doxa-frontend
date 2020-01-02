@@ -26,6 +26,7 @@ const GET_SENTIMENT = gql`
             polarity
             normalizedSentiment
             favorites
+            retweets
             id
           }
         }

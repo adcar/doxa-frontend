@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
+    <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="Switched to using one table. Got sorting to work using MUI.">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TweetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -178,7 +181,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="242000" />
+      <workItem from="1577937278889" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -390,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577932051018</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixed tooltip bug">
+      <created>1577937559598</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1577937559598</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +421,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add cursor: pointer; to main search" />
     <MESSAGE value="Added transition to submit butto" />
     <MESSAGE value="Improved gauge" />
     <MESSAGE value="Abstract SentimentGauge into new component" />
@@ -436,7 +445,8 @@
     <MESSAGE value="Added a footer" />
     <MESSAGE value="Begin tests" />
     <MESSAGE value="Switched to using one table. Got sorting to work using MUI." />
-    <option name="LAST_COMMIT_MESSAGE" value="Switched to using one table. Got sorting to work using MUI." />
+    <MESSAGE value="fixed tooltip bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tooltip bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -447,10 +457,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="349" y="8" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1577932050902">
+    <state x="347" y="-10" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1577937568303">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="349" y="8" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577932050902" />
+    <state x="347" y="-10" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577937568303" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -523,10 +533,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="154" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575565858311" />
-    <state x="537" y="113" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1577932058547">
+    <state x="535" y="95" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1577937571070">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="537" y="113" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577932058547" />
+    <state x="535" y="95" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577937571070" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
