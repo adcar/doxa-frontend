@@ -13,7 +13,6 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
 import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
 
@@ -136,12 +135,6 @@ const EnhancedTableToolbar = props => {
       <Typography className={classes.title} variant="h6" id="tableTitle">
         Tweets
       </Typography>
-
-      <Tooltip title="Filter list">
-        <IconButton aria-label="filter list">
-          <FilterListIcon />
-        </IconButton>
-      </Tooltip>
     </Toolbar>
   );
 };
