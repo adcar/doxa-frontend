@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import { lighten, makeStyles } from "@material-ui/core/styles";
+import { lighten, makeStyles, useTheme } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/Container";
 import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
@@ -67,8 +66,8 @@ function EnhancedTableHead(props) {
       <TableRow className={classes.tableHead}>
         {headCells.map(headCell => (
           <TableCell
+            className={classes.headCell}
             key={headCell.id}
-            padding={headCell.disablePadding ? "none" : "default"}
             sortDirection={orderBy === headCell.id ? order : false}
           >
             <TableSortLabel
@@ -76,7 +75,7 @@ function EnhancedTableHead(props) {
               direction={orderBy === headCell.id ? order : "asc"}
               onClick={createSortHandler(headCell.id)}
               classes={{
-                root: classes.headCell,
+                root: classes.headCellLabel,
                 active: classes.headCellActive,
                 icon: classes.headCellIcon,
                 iconDirectionDesc: classes.headCellIconDesc,
@@ -142,11 +141,12 @@ const EnhancedTableToolbar = props => {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "100%"
+    width: "100%",
+    overflowX: "scroll"
   },
   table: {
-    minWidth: 750,
-    borderRadius: 200
+    minWidth: 800,
+    borderCollapse: "separate"
   },
   visuallyHidden: {
     border: 0,
@@ -159,11 +159,21 @@ const useStyles = makeStyles(theme => ({
     top: 20,
     width: 1
   },
-  tableHead: {
-    backgroundColor: theme.palette.primary.main,
-    borderRadius: "50%"
-  },
+  tableHead: {},
   headCell: {
+    backgroundColor: theme.palette.primary.main,
+    "&:first-of-type": {
+      paddingLeft: theme.spacing(4),
+      borderTopLeftRadius: theme.radius,
+      borderBottomLeftRadius: theme.radius
+    },
+    "&:last-of-type": {
+      paddingRight: theme.spacing(4),
+      borderTopRightRadius: theme.radius,
+      borderBottomRightRadius: theme.radius
+    }
+  },
+  headCellLabel: {
     color: theme.palette.primary.contrastText + " !important",
     "&:hover": {
       color: theme.palette.primary.contrastText
@@ -184,6 +194,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function TweetTable({ tweets }) {
+  const theme = useTheme();
   let rows = [];
   tweets.edges.forEach(({ node }) => rows.push(node));
 
@@ -232,15 +243,34 @@ export default function TweetTable({ tweets }) {
             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             .map(row => {
               return (
-                <TableRow hover key={row.id}>
-                  <TableCell component="th" scope="row">
+                <TableRow key={row.id} className={classes.tableRow}>
+                  <TableCell
+                    component="th"
+                    scope="row"
+                    className={classes.tableCell}
+                  >
                     {row.username}
                   </TableCell>
-                  <TableCell>{row.content}</TableCell>
-                  <TableCell>{row.polarity}</TableCell>
-                  <TableCell>{row.normalizedSentiment}</TableCell>
-                  <TableCell>{row.favorites}</TableCell>
-                  <TableCell>{row.retweets}</TableCell>
+                  <TableCell
+                    className={classes.tableCell}
+                    style={{
+                      height: theme.spacing(5)
+                    }}
+                  >
+                    {row.content}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {row.polarity}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {row.normalizedSentiment}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {row.favorites}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {row.retweets}
+                  </TableCell>
                 </TableRow>
               );
             })}
