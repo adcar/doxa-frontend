@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TweetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +184,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="17415000" />
+      <workItem from="1577937278889" duration="20098000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -426,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578012958460</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Fixed positioning issues on the table, removed toolbar">
+      <created>1578016924289</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1578016924289</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,8 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Gave container on SentimentGauge &quot;position: relative&quot;" />
-    <MESSAGE value="Re-phrase" />
     <MESSAGE value="Gauge changes color based on new query" />
     <MESSAGE value="Improved colors" />
     <MESSAGE value="Alignment fixes and new labels" />
@@ -472,7 +482,9 @@
     <MESSAGE value="Fixed coloring issue on table" />
     <MESSAGE value="Fixed alignment issues" />
     <MESSAGE value="Styled the Tweet table to make it more rounded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styled the Tweet table to make it more rounded" />
+    <MESSAGE value="Fixed positioning issues on the table" />
+    <MESSAGE value="Fixed positioning issues on the table, removed toolbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed positioning issues on the table, removed toolbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -483,10 +495,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="333" y="-136" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578016895594">
+    <state x="331" y="-154" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578016924220">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="333" y="-136" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578016895594" />
+    <state x="331" y="-154" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578016924220" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -559,10 +571,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="154" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575565858311" />
-    <state x="527" y="23" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578012961713">
+    <state x="525" y="5" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578016927316">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="527" y="23" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578012961713" />
+    <state x="525" y="5" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578016927316" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

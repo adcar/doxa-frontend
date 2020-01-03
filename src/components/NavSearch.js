@@ -10,14 +10,15 @@ const useStyles = makeStyles(theme => ({
     paddingRight: 80,
     height: 30,
     borderRadius: theme.radius,
-    backgroundColor: theme.bg,
-    border: "none",
+    backgroundColor: theme.palette.background.default,
     outline: "none",
+    color: theme.palette.text.primary,
+    border: `1px solid ${theme.palette.divider}`,
     "&:focus": {
       boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
     },
     "&::placeholder": {
-      color: "lightgrey"
+      color: theme.palette.text.hint
     }
   },
   submit: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: theme.radius,
     border: "none",
     backgroundColor: theme.palette.primary.main,
-    color: "white",
+    color: theme.palette.primary.contrastText,
     outline: "none",
     "&:hover": {
       boxShadow: `3px 10px 15px ${theme.palette.primary.light}`

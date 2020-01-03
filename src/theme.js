@@ -6,10 +6,10 @@ import { red } from "@material-ui/core/colors";
 const shadowColor = "#967fac";
 const theme = createMuiTheme({
   radius: 50,
-  bg: "#f0f0f0",
   shadowColor: "#967fac",
   purpleShadow: `5px 10px 15px ${shadowColor}`,
   palette: {
+    type: "dark",
     primary: {
       main: "#7E1DEC"
     },
@@ -21,9 +21,6 @@ const theme = createMuiTheme({
     },
     error: {
       main: red.A400
-    },
-    background: {
-      default: "#fff"
     }
   },
   typography: {

@@ -37,6 +37,7 @@ const GET_SENTIMENT = gql`
 
 const useStyles = makeStyles(theme => ({
   spinnerWrapper: {
+    backgroundColor: theme.palette.background.default,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -51,6 +52,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: 50
   },
   resultsWrapper: {
+    backgroundColor: theme.palette.background.default,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

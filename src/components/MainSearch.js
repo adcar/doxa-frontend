@@ -11,19 +11,20 @@ const useStyles = makeStyles(theme => ({
   input: {
     marginTop: theme.spacing(4),
     transition: "all 0.1s ease-out",
-    backgroundColor: theme.bg,
-    border: "none",
+    backgroundColor: theme.palette.background.paper,
     outline: "none",
     fontSize: "18pt",
     width: "100%",
+    border: `1px solid ${theme.palette.divider}`,
     padding: theme.spacing(2),
     paddingLeft: theme.spacing(4),
     borderRadius: theme.radius,
+    color: theme.palette.text.primary,
     "&:focus": {
       boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
     },
     "&::placeholder": {
-      color: "lightgrey"
+      color: theme.palette.text.hint
     }
   },
   submit: {
@@ -34,10 +35,10 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     right: 40,
     width: 100,
-    borderRadius: theme.radius,
     border: "none",
+    borderRadius: theme.radius,
     backgroundColor: theme.palette.primary.main,
-    color: "white",
+    color: theme.palette.primary.contrastText,
     fontSize: "14pt",
     outline: "none",
     "&:hover": {

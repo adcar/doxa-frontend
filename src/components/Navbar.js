@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import NavSearch from "./NavSearch";
 import Link from "next/link";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 const useStyles = makeStyles(theme => ({
   nav: {
@@ -14,8 +14,8 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(8),
     justifyContent: "space-around"
   },
-  shadow: {
-    boxShadow: `0px 4px 14px ${theme.shadowColor}`,
+  divider: {
+    borderBottom: `1px solid ${theme.palette.divider}`
   }
 }));
 
@@ -23,19 +23,23 @@ export default function Navbar() {
   const router = useRouter();
   const classes = useStyles();
 
-  
-    return (
-      <nav className={clsx(classes.nav, !(router.pathname === "/") && classes.shadow)}>
-        <Link href="/">
-          <Typography
-            style={{
-              cursor: "pointer"
-            }}
-          >
-            Doxa
-          </Typography>
-        </Link>
-        <NavSearch />
-      </nav>
-    );
-  }
+  return (
+    <nav
+      className={clsx(
+        classes.nav,
+        !(router.pathname === "/") && classes.divider
+      )}
+    >
+      <Link href="/">
+        <Typography
+          style={{
+            cursor: "pointer"
+          }}
+        >
+          Doxa
+        </Typography>
+      </Link>
+      <NavSearch />
+    </nav>
+  );
+}
