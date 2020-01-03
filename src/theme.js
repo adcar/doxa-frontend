@@ -25,7 +25,8 @@ function getTheme(theme) {
         main: red.A400
       },
       background: {
-        default: theme.paletteType === "light" ? "#f7f7f7" : "#2f2f31"
+        default: theme.paletteType === "light" ? "#f7f7f7" : "#2f2f31",
+        paper: theme.paletteType === "light" ? "#FFFFFF" : "#3b3b3b"
       }
     },
     typography: {

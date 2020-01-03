@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="23863000" />
+      <workItem from="1577937278889" duration="24853000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578037143249</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Changed splash text to light purple">
+      <created>1578037763038</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1578037763038</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Made pie chart more responsive" />
     <MESSAGE value="Added padding right to NavSearch component in order to allow the user to view what they are typing in full." />
     <MESSAGE value="Improved colors on SentimentGauge.js" />
     <MESSAGE value="Added a legend to TweetCountPie.js" />
@@ -507,7 +513,8 @@
     <MESSAGE value="Switched to JSS for the gauge" />
     <MESSAGE value="Customized background dynamically" />
     <MESSAGE value="Changed splash text to white" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed splash text to white" />
+    <MESSAGE value="Changed splash text to light purple" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed splash text to light purple" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -518,10 +525,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="547" y="-77" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578037749854">
+    <state x="545" y="-95" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578037762969">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="547" y="-77" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037749854" />
+    <state x="545" y="-95" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037762969" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -594,10 +601,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="767" y="136" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578037386697" />
-    <state x="690" y="92" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578037753219">
+    <state x="688" y="74" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578037886726">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="92" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037753219" />
+    <state x="688" y="74" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037886726" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
