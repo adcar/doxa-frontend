@@ -34,6 +34,12 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-start"
+  },
+  heading: {
+    color:
+      theme.palette.type === "light"
+        ? theme.palette.primary.main
+        : theme.palette.primary.light
   }
 }));
 
@@ -44,9 +50,9 @@ export default function Index() {
     <div className={classes.splash}>
       <Box my={4} className={classes.form}>
         <Typography
+          className={classes.heading}
           variant="h3"
           component="h1"
-          color={theme.palette.type === "light" ? "primary" : "inherit"}
           gutterBottom
         >
           Sentiment Analysis for
