@@ -4,7 +4,7 @@ import Box from "@material-ui/core/Box";
 import ReactRotatingText from "react-rotating-text";
 import MainSearch from "../src/components/MainSearch";
 import splash from "../public/splash.svg";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   form: {
@@ -38,11 +38,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Index() {
+  const theme = useTheme();
   const classes = useStyles();
   return (
     <div className={classes.splash}>
       <Box my={4} className={classes.form}>
-        <Typography variant="h3" component="h1" color="primary" gutterBottom>
+        <Typography
+          variant="h3"
+          component="h1"
+          color={theme.palette.type === "light" ? "primary" : "inherit"}
+          gutterBottom
+        >
           Sentiment Analysis for
           <br />
           <ReactRotatingText
