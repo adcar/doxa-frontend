@@ -9,7 +9,7 @@ const theme = createMuiTheme({
   shadowColor: "#967fac",
   purpleShadow: `5px 10px 15px ${shadowColor}`,
   palette: {
-    type: "dark",
+    type: "light",
     primary: {
       main: "#7E1DEC"
     },
