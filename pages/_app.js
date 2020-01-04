@@ -15,11 +15,15 @@ const client = new ApolloClient({
   uri: "https://doxa-api.herokuapp.com/graphql"
 });
 
-let theme = getTheme({
-  paletteType: "light"
-});
-
 export default class MyApp extends App {
+  constructor() {
+    super();
+    this.state = {
+      theme: getTheme({
+        paletteType: "light"
+      })
+    };
+  }
   componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
@@ -27,8 +31,9 @@ export default class MyApp extends App {
       jssStyles.parentElement.removeChild(jssStyles);
     }
 
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
-      theme = getTheme({ paletteType: "dark" });
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      this.setState({ theme: getTheme({ paletteType: "dark" }) });
+    }
   }
 
   render() {
@@ -40,7 +45,7 @@ export default class MyApp extends App {
           <Head>
             <title>Doxa</title>
           </Head>
-          <ThemeProvider theme={theme}>
+          <ThemeProvider theme={this.state.theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <Navbar />
