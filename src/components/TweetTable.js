@@ -106,14 +106,13 @@ EnhancedTableHead.propTypes = {
 };
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    width: "100%"
-  },
+  root: {},
   tableContainer: {
-    overflowX: "auto"
+    maxWidth: "90vw",
+    overflow: "auto"
   },
   table: {
-    minWidth: 800,
+    overflowX: "auto",
     borderCollapse: "separate"
   },
   visuallyHidden: {
