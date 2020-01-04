@@ -164,7 +164,7 @@ export default function TweetTable({ tweets }) {
   tweets.edges.forEach(({ node }) => rows.push(node));
 
   const classes = useStyles();
-  const [order, setOrder] = React.useState("asc");
+  const [order, setOrder] = React.useState("desc");
   const [orderBy, setOrderBy] = React.useState("favorites");
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
