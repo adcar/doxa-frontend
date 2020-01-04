@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TweetCountPie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCountPie.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="24853000" />
+      <workItem from="1577937278889" duration="25991000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -468,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578037763038</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Made paper color slightly darker">
+      <created>1578038751569</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1578038751569</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added padding right to NavSearch component in order to allow the user to view what they are typing in full." />
     <MESSAGE value="Improved colors on SentimentGauge.js" />
     <MESSAGE value="Added a legend to TweetCountPie.js" />
     <MESSAGE value="Changed &quot;Sentiment&quot; to &quot;Sentiment Score&quot;" />
@@ -514,7 +520,8 @@
     <MESSAGE value="Customized background dynamically" />
     <MESSAGE value="Changed splash text to white" />
     <MESSAGE value="Changed splash text to light purple" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed splash text to light purple" />
+    <MESSAGE value="Made paper color slightly darker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made paper color slightly darker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -525,30 +532,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="545" y="-95" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578037762969">
+    <state x="543" y="-113" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578038751298">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="545" y="-95" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037762969" />
+    <state x="543" y="-113" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578038751298" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="231" key="GridCell.Tab.0.bottom" timestamp="1578037749945">
+    <state width="1897" height="231" key="GridCell.Tab.0.bottom" timestamp="1578098839864">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578037749945" />
-    <state width="1897" height="231" key="GridCell.Tab.0.center" timestamp="1578037749944">
+    <state width="1897" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578098839864" />
+    <state width="1897" height="231" key="GridCell.Tab.0.center" timestamp="1578098839863">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578037749944" />
-    <state width="1897" height="231" key="GridCell.Tab.0.left" timestamp="1578037749944">
+    <state width="1897" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578098839863" />
+    <state width="1897" height="231" key="GridCell.Tab.0.left" timestamp="1578098839862">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578037749944" />
-    <state width="1897" height="231" key="GridCell.Tab.0.right" timestamp="1578037749945">
+    <state width="1897" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578098839862" />
+    <state width="1897" height="231" key="GridCell.Tab.0.right" timestamp="1578098839863">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578037749945" />
+    <state width="1897" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578098839863" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -601,10 +608,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="767" y="136" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578037386697" />
-    <state x="688" y="74" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578037886726">
+    <state x="684" y="38" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578098751415">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="688" y="74" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578037886726" />
+    <state x="684" y="38" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578098751415" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
