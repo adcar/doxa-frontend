@@ -165,7 +165,7 @@ export default function TweetTable({ tweets }) {
 
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("username");
+  const [orderBy, setOrderBy] = React.useState("favorites");
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
