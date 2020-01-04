@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +184,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="34135000" />
+      <workItem from="1577937278889" duration="36795000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -512,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578107562484</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Fixed link issue">
+      <created>1578108069695</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1578108069695</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Increased radius of pie chart" />
     <MESSAGE value="Change color in the sentiment message" />
     <MESSAGE value="Revert font color change and improve low and high positions" />
     <MESSAGE value="Added a footer" />
@@ -558,7 +567,8 @@
     <MESSAGE value="Scaled down gauge slightly" />
     <MESSAGE value="Changed the default table sorting to &quot;favorites&quot;" />
     <MESSAGE value="Changed the default order to &quot;desc&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the default order to &quot;desc&quot;" />
+    <MESSAGE value="Fixed link issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed link issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -569,30 +579,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="531" y="-221" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578107562380">
+    <state x="335" y="65" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578110613793">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="531" y="-221" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578107562380" />
+    <state x="335" y="65" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578110613793" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="231" key="GridCell.Tab.0.bottom" timestamp="1578107063607">
+    <state width="1897" height="431" key="GridCell.Tab.0.bottom" timestamp="1578110613886">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578107063607" />
-    <state width="1897" height="231" key="GridCell.Tab.0.center" timestamp="1578107063606">
+    <state width="1897" height="431" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578110613886" />
+    <state width="1897" height="431" key="GridCell.Tab.0.center" timestamp="1578110613884">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578107063606" />
-    <state width="1897" height="231" key="GridCell.Tab.0.left" timestamp="1578107063606">
+    <state width="1897" height="431" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578110613884" />
+    <state width="1897" height="431" key="GridCell.Tab.0.left" timestamp="1578110613883">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578107063606" />
-    <state width="1897" height="231" key="GridCell.Tab.0.right" timestamp="1578107063607">
+    <state width="1897" height="431" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578110613883" />
+    <state width="1897" height="431" key="GridCell.Tab.0.right" timestamp="1578110613885">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="231" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578107063607" />
+    <state width="1897" height="431" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578110613885" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

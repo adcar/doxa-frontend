@@ -3,7 +3,7 @@ import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "../src/theme";
+import getTheme from "../src/theme";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import "./empty.css";
@@ -15,6 +15,10 @@ const client = new ApolloClient({
   uri: "https://doxa-api.herokuapp.com/graphql"
 });
 
+let theme = getTheme({
+  paletteType: "dark"
+});
+
 export default class MyApp extends App {
   componentDidMount() {
     // Remove the server-side injected CSS.
@@ -22,6 +26,9 @@ export default class MyApp extends App {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+      theme = getTheme({ paletteType: "dark" });
   }
 
   render() {
