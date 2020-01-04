@@ -16,7 +16,7 @@ const client = new ApolloClient({
 });
 
 let theme = getTheme({
-  paletteType: "dark"
+  paletteType: "light"
 });
 
 export default class MyApp extends App {
