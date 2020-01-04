@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
     position: "relative",
     maxWidth: 500,
     [theme.breakpoints.up("sm")]: {
-      transform: "scale(0.8)"
+      transform: "scale(0.75)"
     }
   }
 }));
