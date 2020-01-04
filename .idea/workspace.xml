@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TweetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="33734000" />
+      <workItem from="1577937278889" duration="34135000" />
     </task>
     <task id="LOCAL-00001" summary="Made search bar lightgrey">
       <created>1574889087538</created>
@@ -506,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578107139706</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Changed the default order to &quot;desc&quot;">
+      <created>1578107562484</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1578107562484</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fix placement of lowest and highest on gauge" />
     <MESSAGE value="Increased radius of pie chart" />
     <MESSAGE value="Change color in the sentiment message" />
     <MESSAGE value="Revert font color change and improve low and high positions" />
@@ -552,7 +557,8 @@
     <MESSAGE value="Fixed scrolling issue on table. Resized Sentiment Gauge and Pie chart" />
     <MESSAGE value="Scaled down gauge slightly" />
     <MESSAGE value="Changed the default table sorting to &quot;favorites&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the default table sorting to &quot;favorites&quot;" />
+    <MESSAGE value="Changed the default order to &quot;desc&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the default order to &quot;desc&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -563,10 +569,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="533" y="-203" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578107139642">
+    <state x="531" y="-221" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578107562380">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="533" y="-203" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578107139642" />
+    <state x="531" y="-221" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578107562380" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -639,10 +645,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="118" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578100965179" />
-    <state x="680" y="2" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578106939040">
+    <state x="678" y="-16" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578107566609">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="680" y="2" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578106939040" />
+    <state x="678" y="-16" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578107566609" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
