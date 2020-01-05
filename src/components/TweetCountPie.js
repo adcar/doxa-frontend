@@ -63,7 +63,7 @@ function createValues(
   }
   if (neutralTweetsCount > 0) {
     tweetCounts.push({
-      color: ttheme.palette.neutral.main,
+      color: theme.palette.neutral.main,
       title: "Neutral",
       value: neutralTweetsCount
     });
