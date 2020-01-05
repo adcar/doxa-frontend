@@ -8,7 +8,6 @@ const shadowColor = "#967fac";
 export default function getTheme(theme) {
   return responsiveFontSizes(
     createMuiTheme({
-      radius: 50,
       shadowColor: "#967fac",
       purpleShadow: `5px 10px 15px ${shadowColor}`,
       palette: {
@@ -26,12 +25,16 @@ export default function getTheme(theme) {
           main: red.A400
         },
         background: {
+          dark: theme.paletteType === "light" ? "#ededed" : "#222224",
           default: theme.paletteType === "light" ? "#f7f7f7" : "#2f2f31",
           paper: theme.paletteType === "light" ? "#FFFFFF" : "#3b3b3b"
         }
       },
       typography: {
         fontFamily: ['"Montserrat"'].join(",")
+      },
+      shape: {
+        borderRadius: 50
       }
     })
   );

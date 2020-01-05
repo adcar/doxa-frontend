@@ -4,14 +4,14 @@ import Box from "@material-ui/core/Box";
 import ReactRotatingText from "react-rotating-text";
 import MainSearch from "../src/components/MainSearch";
 import splash from "../public/splash.svg";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   form: {
     backgroundColor: theme.palette.background.paper,
     position: "absolute",
     maxWidth: 600,
-    borderRadius: theme.radius,
+    borderRadius: theme.shape.borderRadius,
     padding: theme.spacing(5),
     margin: theme.spacing(2),
     [theme.breakpoints.up("md")]: {
@@ -44,7 +44,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Index() {
-  const theme = useTheme();
   const classes = useStyles();
   return (
     <div className={classes.splash}>

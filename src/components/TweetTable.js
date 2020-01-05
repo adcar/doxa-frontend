@@ -130,13 +130,13 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.primary.main,
     "&:first-of-type": {
       paddingLeft: theme.spacing(4),
-      borderTopLeftRadius: theme.radius,
-      borderBottomLeftRadius: theme.radius
+      borderTopLeftRadius: theme.shape.borderRadius,
+      borderBottomLeftRadius: theme.shape.borderRadius
     },
     "&:last-of-type": {
       paddingRight: theme.spacing(4),
-      borderTopRightRadius: theme.radius,
-      borderBottomRightRadius: theme.radius
+      borderTopRightRadius: theme.shape.borderRadius,
+      borderBottomRightRadius: theme.shape.borderRadius
     }
   },
   headCellLabel: {

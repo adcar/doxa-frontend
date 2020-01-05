@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     border: `1px solid ${theme.palette.divider}`,
     padding: theme.spacing(2),
     paddingLeft: theme.spacing(4),
-    borderRadius: theme.radius,
+    borderRadius: theme.shape.borderRadius,
     color: theme.palette.text.primary,
     "&:focus": {
       boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     right: 40,
     width: 100,
     border: "none",
-    borderRadius: theme.radius,
+    borderRadius: theme.shape.borderRadius,
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     fontSize: "14pt",
