@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         : [theme.shadows[13]]
   },
   splash: {
-    height: `calc(100vh - 40px)`,
+    height: `calc(100vh - 70px)`,
     width: "100%",
     backgroundPosition: "right",
     backgroundImage: `url(${splash})`,

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
+    <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="Re-enabled the dark theme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,14 +184,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="45395000" />
-    </task>
-    <task id="LOCAL-00004" summary="Client side regex handling">
-      <created>1574977942751</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1574977942751</updated>
+      <workItem from="1577937278889" duration="45783000" />
     </task>
     <task id="LOCAL-00005" summary="Added labels to Gauge">
       <created>1574979440510</created>
@@ -533,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578207942012</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Improved designs of analyze inputs">
+      <created>1578212393711</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1578212393711</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,8 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Switched to using one table. Got sorting to work using MUI." />
-    <MESSAGE value="fixed tooltip bug" />
     <MESSAGE value="Added a top purple bar to the tweet tale" />
     <MESSAGE value="Added a top purple bar to the tweet table" />
     <MESSAGE value="Fixed coloring issue on table" />
@@ -579,7 +573,9 @@
     <MESSAGE value="Changed default to light" />
     <MESSAGE value="Make theme state so that it can be changed" />
     <MESSAGE value="Replace theme.radius with theme.shape.borderRadius. Added dark to background palette" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace theme.radius with theme.shape.borderRadius. Added dark to background palette" />
+    <MESSAGE value="Improved designs of analyze inputs" />
+    <MESSAGE value="Re-enabled the dark theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-enabled the dark theme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576430018061">
@@ -590,10 +586,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="364" y="24" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578212370312">
+    <state x="358" y="-30" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578212823382">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="364" y="24" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578212370312" />
+    <state x="358" y="-30" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578212823382" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -666,10 +662,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="763" y="100" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578207229037" />
-    <state x="594" y="89" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578207952267">
+    <state x="590" y="53" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578212458603">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="594" y="89" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578207952267" />
+    <state x="590" y="53" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578212458603" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -11,11 +11,11 @@ const useStyles = makeStyles(theme => ({
     height: 70,
     display: "flex",
     alignItems: "center",
-    marginBottom: theme.spacing(8),
     justifyContent: "space-around"
   },
   divider: {
-    borderBottom: `1px solid ${theme.palette.divider}`
+    borderBottom: `1px solid ${theme.palette.divider}`,
+    marginBottom: theme.spacing(8)
   }
 }));
 
