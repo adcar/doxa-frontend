@@ -74,7 +74,7 @@ export default function MainSearch() {
         Router.push({
           pathname: "/results",
           query: { term }
-        });
+        }).then(() => window.scrollTo(0, 0));
       }}
     >
       <input
