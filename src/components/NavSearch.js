@@ -5,17 +5,17 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   input: {
     width: "100%",
-    transition: "all 0.1s ease-out",
+    transition: "all 0.25s ease-out",
     paddingLeft: 20,
     paddingRight: 80,
     height: 30,
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.paper,
     outline: "none",
     color: theme.palette.text.primary,
-    border: `1px solid ${theme.palette.divider}`,
+    border: "none",
     "&:focus": {
-      boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
+      backgroundColor: theme.palette.background.other
     },
     "&::placeholder": {
       color: theme.palette.text.hint
@@ -27,14 +27,15 @@ const useStyles = makeStyles(theme => ({
     padding: "0px 15px",
     position: "absolute",
     right: 0,
-    transition: "all 0.1s ease-out",
+    transition: "all 0.25s ease-out",
     borderRadius: theme.shape.borderRadius,
-    border: "none",
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     outline: "none",
+    border: "none",
+    boxShadow: theme.shadows[2],
     "&:hover": {
-      boxShadow: `3px 10px 15px ${theme.palette.primary.light}`
+      boxShadow: theme.shadows[5]
     },
     "&:focus": {
       backgroundColor: theme.palette.primary.dark

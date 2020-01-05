@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Router from "next/router";
-
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
@@ -10,18 +9,18 @@ const useStyles = makeStyles(theme => ({
   },
   input: {
     marginTop: theme.spacing(4),
-    transition: "all 0.1s ease-out",
+    transition: "all 0.25s ease-out",
     backgroundColor: theme.palette.background.paper,
     outline: "none",
     fontSize: "18pt",
     width: "100%",
-    border: `1px solid ${theme.palette.divider}`,
+    border: "none",
     padding: theme.spacing(2),
     paddingLeft: theme.spacing(4),
     borderRadius: theme.shape.borderRadius,
     color: theme.palette.text.primary,
     "&:focus": {
-      boxShadow: `3px 10px 15px rgba(0,0,0,0.25)`
+      backgroundColor: theme.palette.background.other
     },
     "&::placeholder": {
       color: theme.palette.text.hint
@@ -30,19 +29,20 @@ const useStyles = makeStyles(theme => ({
   submit: {
     cursor: "pointer",
     marginTop: theme.spacing(4),
-    transition: "all 0.1s ease-out",
     height: 60,
     position: "absolute",
     right: 40,
     width: 100,
+    fontSize: "14pt",
     border: "none",
+    transition: "all 0.25s ease-out",
     borderRadius: theme.shape.borderRadius,
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
-    fontSize: "14pt",
     outline: "none",
+    boxShadow: theme.shadows[2],
     "&:hover": {
-      boxShadow: `3px 10px 15px ${theme.palette.primary.light}`
+      boxShadow: theme.shadows[5]
     },
     "&:focus": {
       backgroundColor: theme.palette.primary.dark

@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   form: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
     position: "absolute",
     maxWidth: 600,
     borderRadius: theme.shape.borderRadius,
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow:
       theme.palette.type === "light"
         ? `5px 10px 15px ${theme.shadowColor}`
-        : "none"
+        : [theme.shadows[13]]
   },
   splash: {
     height: `calc(100vh - 40px)`,

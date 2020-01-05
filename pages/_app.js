@@ -32,7 +32,7 @@ export default class MyApp extends App {
     }
 
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      this.setState({ theme: getTheme({ paletteType: "dark" }) });
+      // this.setState({ theme: getTheme({ paletteType: "dark" }) });
     }
   }
 

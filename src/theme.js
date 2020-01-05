@@ -25,9 +25,9 @@ export default function getTheme(theme) {
           main: red.A400
         },
         background: {
-          dark: theme.paletteType === "light" ? "#ededed" : "#222224",
-          default: theme.paletteType === "light" ? "#f7f7f7" : "#2f2f31",
-          paper: theme.paletteType === "light" ? "#FFFFFF" : "#3b3b3b"
+          default: theme.paletteType === "light" ? "#FFFFFF" : "#2f2f31",
+          other: theme.paletteType === "light" ? "#e3e3e3" : "#474747",
+          paper: theme.paletteType === "light" ? "#ededed" : "#3b3b3b"
         }
       },
       typography: {
