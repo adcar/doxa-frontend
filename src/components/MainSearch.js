@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Router from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 
+const btnWidth = 120;
+
 const useStyles = makeStyles(theme => ({
-  container: {
-    display: "flex",
-    flexWrap: "wrap"
+  root: {
+    position: "relative"
   },
   input: {
     marginTop: theme.spacing(4),
@@ -13,10 +14,13 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     outline: "none",
     fontSize: "18pt",
-    width: "100%",
     border: "none",
     padding: theme.spacing(2),
     paddingLeft: theme.spacing(4),
+    [theme.breakpoints.up("sm")]: {
+      paddingRight: `calc(${btnWidth}px + ${theme.spacing(2)}px)`
+    },
+
     borderRadius: theme.shape.borderRadius,
     color: theme.palette.text.primary,
     "&:focus": {
@@ -24,15 +28,20 @@ const useStyles = makeStyles(theme => ({
     },
     "&::placeholder": {
       color: theme.palette.text.hint
-    }
+    },
+    width: "100%"
   },
   submit: {
     cursor: "pointer",
     marginTop: theme.spacing(4),
     height: 60,
-    position: "absolute",
-    right: 40,
-    width: 100,
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      position: "absolute",
+      width: btnWidth,
+      right: 0
+    },
+
     fontSize: "14pt",
     border: "none",
     transition: "all 0.25s ease-out",
@@ -56,6 +65,7 @@ export default function MainSearch() {
 
   return (
     <form
+      className={classes.root}
       onSubmit={e => {
         e.preventDefault();
         Router.push({

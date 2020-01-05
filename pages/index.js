@@ -9,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   form: {
     backgroundColor: theme.palette.background.default,
-    position: "absolute",
+
     maxWidth: 600,
     borderRadius: theme.shape.borderRadius,
     padding: theme.spacing(5),
@@ -24,16 +24,20 @@ const useStyles = makeStyles(theme => ({
         : [theme.shadows[13]]
   },
   splash: {
-    height: `calc(100vh - 70px)`,
+    height: `calc(70vh - 80px)`,
     width: "100%",
-    backgroundPosition: "right",
-    backgroundImage: `url(${splash})`,
-    backgroundSize: `70vw auto`,
-    backgroundRepeat: "no-repeat",
-    backgroundColor: theme.palette.background.default,
     display: "flex",
     alignItems: "center",
-    justifyContent: "flex-start"
+    justifyContent: "center",
+    [theme.breakpoints.up("md")]: {
+      height: `calc(90vh - 80px)`,
+      justifyContent: "flex-start",
+      backgroundPosition: "right",
+      backgroundImage: `url(${splash})`,
+      backgroundSize: `60vw auto`,
+      backgroundRepeat: "no-repeat",
+      backgroundColor: theme.palette.background.default
+    }
   },
   heading: {
     color:
