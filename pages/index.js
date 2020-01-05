@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "center",
     [theme.breakpoints.up("md")]: {
-      height: `calc(90vh - 80px)`,
+      height: `calc(100vh - 180px)`,
       justifyContent: "flex-start",
       backgroundPosition: "right",
       backgroundImage: `url(${splash})`,
