@@ -39,11 +39,11 @@ const useStyles = makeStyles(theme => ({
   },
   lowest: {
     [theme.breakpoints.up("sm")]: {
-      top: 300,
-      fontSize: "30pt",
-      left: -100
+      top: 320,
+      fontSize: "22pt",
+      left: -130
     },
-    left: -70,
+    left: -90,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
@@ -52,11 +52,11 @@ const useStyles = makeStyles(theme => ({
   },
   highest: {
     [theme.breakpoints.up("sm")]: {
-      top: 300,
-      fontSize: "30pt",
-      right: -80
+      top: 320,
+      fontSize: "22pt",
+      right: -110
     },
-    right: -60,
+    right: -80,
     fontSize: "20pt",
     top: 200,
     position: "absolute",

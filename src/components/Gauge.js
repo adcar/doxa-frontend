@@ -15,6 +15,11 @@ const useStyles = makeStyles(theme => ({
   gauge: {
     height: 300,
     width: 300,
+
+    [theme.breakpoints.up("sm")]: {
+      position: "relative",
+      top: -20
+    },
     "& > .gauge > .dial": {
       stroke: theme.palette.background.paper,
       strokeWidth: 10,
