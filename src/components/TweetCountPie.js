@@ -38,12 +38,26 @@ const useStyles = makeStyles(theme => ({
   },
   insideText: {
     position: "absolute",
-    [theme.breakpoints.up("sm")]: {
-      top: 170
+    // [theme.breakpoints.up("sm")]: {
+    //   top: 170
+    // },
+    ["@media screen and (min-width: 600px)"]: {
+      top: 160
     },
     top: 110,
 
     color: theme.palette.primary.main
+  },
+  totalTweets: {
+    ["@media screen and (min-width: 600px)"]: {
+      fontSize: "60pt"
+    }
+  },
+  totalTweetsLabel: {
+    ["@media screen and (min-width: 600px)"]: {
+      fontSize: "14pt"
+    },
+    fontSize: "8pt"
   }
 }));
 
@@ -95,10 +109,20 @@ export default function TweetCountPie({
   return (
     <div className={classes.root}>
       <div className={classes.insideText}>
-        <Typography variant="h2" color="inherit" align="center">
+        <Typography
+          variant="h2"
+          color="inherit"
+          align="center"
+          className={classes.totalTweets}
+        >
           {totalTweets}
         </Typography>
-        <Typography variant="subtitle1" color="inherit" align="center">
+        <Typography
+          variant="subtitle1"
+          color="inherit"
+          align="center"
+          className={classes.totalTweetsLabel}
+        >
           Total Tweets
         </Typography>
       </div>
