@@ -19,11 +19,13 @@ const useStyles = makeStyles(theme => ({
   label: {
     ["@media screen and (min-width: 600px)"]: {
       top: 80,
-      width: 300
+      width: 300,
+      height: 325
     },
     [theme.breakpoints.up("md")]: {
       width: 250
     },
+
     top: 60,
     width: 200,
     position: "absolute",
@@ -61,11 +63,10 @@ const useStyles = makeStyles(theme => ({
   },
   lowest: {
     [theme.breakpoints.up("sm")]: {
-      top: 320,
-      fontSize: "22pt",
-      left: -130
+      top: 370,
+      fontSize: "22pt"
     },
-    left: -90,
+    left: -40,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
@@ -74,11 +75,10 @@ const useStyles = makeStyles(theme => ({
   },
   highest: {
     [theme.breakpoints.up("sm")]: {
-      top: 320,
-      fontSize: "22pt",
-      right: -110
+      top: 370,
+      fontSize: "22pt"
     },
-    right: -80,
+    right: -20,
     fontSize: "20pt",
     top: 200,
     position: "absolute",
