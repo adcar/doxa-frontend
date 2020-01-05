@@ -33,23 +33,25 @@ export default function Footer() {
         alignItems="center"
         className={classes.grid}
       >
-        <Grid item>
-          <Typography variant="h3">Doxa</Typography>
+        <Grid item xs={12} sm={3}>
+          <Typography variant="h3" align="center">
+            Doxa
+          </Typography>
         </Grid>
         <Grid item>
-          <Grid container spacing={1}>
-            <Grid item sm={6}>
+          <Grid container>
+            <Grid item xs={6}>
               <Typography variant="h6">About</Typography>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item xs={6}>
               <Typography variant="h6">Contact</Typography>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item xs={6}>
               <Link href="/attribution" className={classes.link}>
                 Attribution
               </Link>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item xs={6}>
               <a href="mailto:contact@acardosi.dev" className={classes.link}>
                 contact@acardosi.dev
               </a>
