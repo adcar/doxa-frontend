@@ -5,14 +5,30 @@ import Gauge from "./Gauge";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
-  label: {
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+    maxWidth: 500,
     [theme.breakpoints.up("sm")]: {
-      top: 130
+      transform: "scale(0.75)"
+    }
+  },
+  label: {
+    ["@media screen and (min-width: 600px)"]: {
+      top: 80,
+      width: 300
+    },
+    [theme.breakpoints.up("md")]: {
+      width: 250
     },
     top: 60,
+    width: 200,
     position: "absolute",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "column"
   },
@@ -26,7 +42,13 @@ const useStyles = makeStyles(theme => ({
   },
   emoji: {
     textAlign: "center",
-    marginBottom: theme.spacing(2)
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.up("sm")]: {
+      "& > .twemoji": {
+        width: 60,
+        height: 60
+      }
+    }
   },
   negative: {
     [theme.breakpoints.up("sm")]: {
@@ -63,15 +85,13 @@ const useStyles = makeStyles(theme => ({
 
     color: theme.palette.primary.light
   },
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "relative",
-    maxWidth: 500,
+
+  sentiment: {
+    margin: 0,
+    textAlign: "center",
+    maxWidth: "100%",
     [theme.breakpoints.up("sm")]: {
-      transform: "scale(0.75)"
+      fontSize: "18pt"
     }
   }
 }));
@@ -138,11 +158,7 @@ export default function SentimentGauge({ value }) {
         <Typography className={classes.lowest}>-100</Typography>
         <Typography className={classes.highest}>100</Typography>
         <p className={classes.emoji}>{emoji}</p>
-        <Typography
-          style={{ margin: 0, textAlign: "center", fontSize: "14pt" }}
-        >
-          {sentiment}
-        </Typography>
+        <Typography className={classes.sentiment}>{sentiment}</Typography>
         {formattedValue}
       </Twemoji>
       <Gauge
