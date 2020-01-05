@@ -47,6 +47,36 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+function createValues(
+  positiveTweetsCount,
+  neutralTweetsCount,
+  negativeTweetsCount,
+  theme
+) {
+  let tweetCounts = [];
+  if (positiveTweetsCount > 0) {
+    tweetCounts.push({
+      color: theme.palette.primary.main,
+      title: "Positive",
+      value: positiveTweetsCount
+    });
+  }
+  if (neutralTweetsCount > 0) {
+    tweetCounts.push({
+      color: ttheme.palette.neutral.main,
+      title: "Neutral",
+      value: neutralTweetsCount
+    });
+  }
+  if (negativeTweetsCount > 0) {
+    tweetCounts.push({
+      color: theme.palette.secondary.main,
+      title: "Negative",
+      value: negativeTweetsCount
+    });
+  }
+  return tweetCounts;
+}
 export default function TweetCountPie({
   positiveTweetsCount,
   neutralTweetsCount,
@@ -54,6 +84,12 @@ export default function TweetCountPie({
 }) {
   const classes = useStyles();
   const theme = useTheme();
+  const values = createValues(
+    positiveTweetsCount,
+    neutralTweetsCount,
+    negativeTweetsCount,
+    theme
+  );
   const totalTweets =
     positiveTweetsCount + neutralTweetsCount + negativeTweetsCount;
   return (
@@ -73,23 +109,7 @@ export default function TweetCountPie({
         animationEasing="ease-out"
         cx={50}
         cy={35}
-        data={[
-          {
-            color: theme.palette.primary.main,
-            title: "Positive",
-            value: positiveTweetsCount
-          },
-          {
-            color: theme.palette.neutral.main,
-            title: "Neutral",
-            value: neutralTweetsCount
-          },
-          {
-            color: theme.palette.secondary.main,
-            title: "Negative",
-            value: negativeTweetsCount
-          }
-        ]}
+        data={values}
         label
         labelPosition={87}
         labelStyle={{
@@ -100,9 +120,6 @@ export default function TweetCountPie({
         }}
         lengthAngle={360}
         lineWidth={25}
-        onClick={undefined}
-        onMouseOut={undefined}
-        onMouseOver={undefined}
         paddingAngle={0}
         radius={34}
         ratio={1}
