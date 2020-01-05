@@ -4,7 +4,6 @@
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +182,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="48096000" />
-    </task>
-    <task id="LOCAL-00006" summary="Add cursor: pointer; to main search">
-      <created>1574979499160</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1574979499160</updated>
+      <workItem from="1577937278889" duration="48553000" />
     </task>
     <task id="LOCAL-00007" summary="Added transition to submit butto">
       <created>1574979633857</created>
@@ -528,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578212912052</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Improved position of form, submit button, and made responsiveness better">
+      <created>1578256440262</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578256440262</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added a top purple bar to the tweet table" />
     <MESSAGE value="Fixed coloring issue on table" />
     <MESSAGE value="Fixed alignment issues" />
     <MESSAGE value="Styled the Tweet table to make it more rounded" />
@@ -574,7 +572,8 @@
     <MESSAGE value="Improved designs of analyze inputs" />
     <MESSAGE value="Re-enabled the dark theme" />
     <MESSAGE value="Navbar: only marginBottom if divider is enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar: only marginBottom if divider is enabled" />
+    <MESSAGE value="Improved position of form, submit button, and made responsiveness better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved position of form, submit button, and made responsiveness better" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="356" y="-48" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578212911898">
+    <state x="354" y="-66" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578256440140">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="356" y="-48" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578212911898" />
+    <state x="354" y="-66" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578256440140" />
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl" timestamp="1576429830085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -669,10 +668,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="588" y="35" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578212915018">
+    <state x="586" y="17" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578256443528">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="588" y="35" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578212915018" />
+    <state x="586" y="17" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578256443528" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

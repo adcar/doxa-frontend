@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         : [theme.shadows[13]]
   },
   splash: {
-    height: `calc(70vh - 80px)`,
+    minHeight: `calc(70vh - 80px)`,
     width: "100%",
     display: "flex",
     alignItems: "center",
