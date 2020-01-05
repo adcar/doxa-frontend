@@ -3,6 +3,7 @@ import Router from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 
 const btnWidth = 120;
+const height = 60;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -10,6 +11,8 @@ const useStyles = makeStyles(theme => ({
   },
   input: {
     marginTop: theme.spacing(4),
+    width: "100%",
+    height,
     transition: "all 0.25s ease-out",
     backgroundColor: theme.palette.background.paper,
     outline: "none",
@@ -28,14 +31,14 @@ const useStyles = makeStyles(theme => ({
     },
     "&::placeholder": {
       color: theme.palette.text.hint
-    },
-    width: "100%"
+    }
   },
   submit: {
     cursor: "pointer",
     marginTop: theme.spacing(4),
-    height: 60,
+    height,
     width: "100%",
+
     [theme.breakpoints.up("sm")]: {
       position: "absolute",
       width: btnWidth,

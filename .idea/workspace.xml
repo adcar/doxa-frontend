@@ -4,7 +4,6 @@
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +182,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="48798000" />
-    </task>
-    <task id="LOCAL-00008" summary="Improved gauge">
-      <created>1574980358624</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1574980358624</updated>
+      <workItem from="1577937278889" duration="49083000" />
     </task>
     <task id="LOCAL-00009" summary="Abstract SentimentGauge into new component">
       <created>1574980966749</created>
@@ -528,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578256930258</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Changed &quot;bitcoin&quot; to &quot;business name&quot;">
+      <created>1578257050450</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1578257050450</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed alignment issues" />
     <MESSAGE value="Styled the Tweet table to make it more rounded" />
     <MESSAGE value="Fixed positioning issues on the table" />
     <MESSAGE value="Fixed positioning issues on the table, removed toolbar" />
@@ -574,7 +572,8 @@
     <MESSAGE value="Navbar: only marginBottom if divider is enabled" />
     <MESSAGE value="Improved position of form, submit button, and made responsiveness better" />
     <MESSAGE value="Changed &quot;height&quot; to &quot;minHeight&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed &quot;height&quot; to &quot;minHeight&quot;" />
+    <MESSAGE value="Changed &quot;bitcoin&quot; to &quot;business name&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed &quot;bitcoin&quot; to &quot;business name&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="352" y="-84" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578256930111">
+    <state x="350" y="-102" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578257050301">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="352" y="-84" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578256930111" />
+    <state x="350" y="-102" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578257050301" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
