@@ -6,7 +6,6 @@ import Link from "../Link";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: theme.spacing(6),
     backgroundColor: theme.palette.primary.main,
     height: 200,
     color: theme.palette.primary.contrastText
