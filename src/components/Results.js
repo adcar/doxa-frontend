@@ -7,11 +7,12 @@ import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import "./twemoji.css";
-import undrawEmpty from "../../public/undraw_empty.svg";
 import SentimentGauge from "./SentimentGauge";
 import TweetCountPie from "./TweetCountPie";
 import TweetTable from "./TweetTable";
 import Tweet from "./Tweet";
+import undrawEmpty from "../../public/undraw_empty.svg";
+import SiteError from "./SiteError";
 
 const GET_SENTIMENT = gql`
   query GetSentiment($term: String!) {
@@ -65,9 +66,6 @@ const useStyles = makeStyles(theme => ({
       margin: 0
     },
     marginBottom: theme.spacing(8)
-  },
-  empty: {
-    width: "100%"
   }
 }));
 
@@ -116,33 +114,24 @@ export default function Results({ term }) {
   const value = Math.round(averageWeighedPolarity * 100);
 
   if (positiveTweetsCount + negativeTweetsCount + neutralTweetsCount <= 0) {
-    //404
+    // Search term not found
     return (
-      <Container>
-        <Grid container spacing={8}>
-          <Grid item xs={12}>
-            <Typography variant="h4" component="h1" align="center" gutterBottom>
-              Couldn't find any tweets containing{" "}
-              <Typography color="primary" variant="inherit">
-                "{term}"
-              </Typography>
+      <SiteError
+        svg={undrawEmpty}
+        alt="Man with empty box"
+        title={
+          <Typography align="center" variant="h3" component="h1">
+            Couldn't find any tweets containing{" "}
+            <Typography color="primary" variant="inherit">
+              "{term}"
             </Typography>
-            <Typography align="center" variant="subtitle1">
-              Doxa relies on Tweets containing your search term to perform
-              sentiment analysis. Try using a broader search term.
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Container maxWidth="sm">
-              <img
-                src={undrawEmpty}
-                className={classes.empty}
-                alt="Man with empty box"
-              />
-            </Container>
-          </Grid>
-        </Grid>
-      </Container>
+          </Typography>
+        }
+        subtitle={
+          "Doxa relies on Tweets containing your search term to perform\n" +
+          "            sentiment analysis. Try using a broader search term."
+        }
+      />
     );
   }
 
@@ -186,7 +175,6 @@ export default function Results({ term }) {
           <TweetCountPie {...chartProps} />
         </Grid>
         <Grid item sm={12}>
-          <Tweet />
           <TweetTable
             className={classes.TweetTables}
             tweets={data.sentiment.tweets}
