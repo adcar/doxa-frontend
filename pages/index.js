@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
   panel1: {
     backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(4),
-    padding: theme.spacing(8),
+    padding: `${theme.spacing(8)}px 0`,
     paddingBottom: theme.spacing(12),
     borderTopLeftRadius: theme.shape.borderRadius,
     borderTopRightRadius: theme.shape.borderRadius
@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     top: -1 * theme.spacing(4),
     backgroundColor: theme.palette.background.default,
 
-    padding: theme.spacing(8),
+    padding: `${theme.spacing(8)}px 0`,
     borderTopLeftRadius: theme.shape.borderRadius,
     borderTopRightRadius: theme.shape.borderRadius
   }
@@ -96,7 +96,7 @@ export default function Index() {
       </div>
       <div className={classes.panel1}>
         <Container>
-          <Grid container spacing={8} alignItems="center">
+          <Grid container spacing={4} alignItems="center">
             <Grid item md={6} xs={12} justify="left">
               <Typography variant="h3" color="primary" gutterBottom>
                 What is Sentiment Analysis?
@@ -123,7 +123,7 @@ export default function Index() {
       </div>
       <div className={classes.panel2}>
         <Container>
-          <Grid container spacing={8} alignItems="center" align="right">
+          <Grid container spacing={4} alignItems="center" align="right">
             <Grid item md={6} xs={0}>
               <img
                 src={ai}
@@ -140,8 +140,8 @@ export default function Index() {
               <Typography>
                 Doxa uses a sentiment analysis tool called Valence Aware
                 Dictionary and sEntiment Reasoner (VADER). This tool utilizes
-                artificial intelligence to process natural language and
-                determine what is positive, negative, or neutral.
+                artificial intelligence to process language and determine what
+                is positive, negative, or neutral.
               </Typography>
             </Grid>
           </Grid>
