@@ -8,7 +8,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.primary.main,
     height: 200,
-    color: theme.palette.primary.contrastText
+    color: theme.palette.primary.contrastText,
+    borderTopLeftRadius: theme.shape.borderRadius,
+    borderTopRightRadius: theme.shape.borderRadius
   },
   grid: {
     height: "100%"
