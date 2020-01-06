@@ -182,14 +182,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="65709000" />
-    </task>
-    <task id="LOCAL-00024" summary="Fix placement of lowest and highest on gauge">
-      <created>1575601215236</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1575601215236</updated>
+      <workItem from="1577937278889" duration="69333000" />
     </task>
     <task id="LOCAL-00025" summary="Increased radius of pie chart">
       <created>1575601714683</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578272916241</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Removed the margin top on footer">
+      <created>1578274574612</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1578274574612</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Utilize &quot;prefers-color-scheme&quot;" />
     <MESSAGE value="Changed default to light" />
     <MESSAGE value="Make theme state so that it can be changed" />
     <MESSAGE value="Replace theme.radius with theme.shape.borderRadius. Added dark to background palette" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Scroll to top when analyzing using the main search" />
     <MESSAGE value="Added a page for when no search terms are recongnized" />
     <MESSAGE value="Added some error messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some error messages" />
+    <MESSAGE value="Removed the margin top on footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the margin top on footer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -588,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="358" y="-54" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578272916046">
+    <state x="356" y="-72" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578274574359">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="358" y="-54" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578272916046" />
+    <state x="356" y="-72" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578274574359" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="434" y="144" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578272920160">
+    <state x="432" y="126" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578279340204">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="434" y="144" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578272920160" />
+    <state x="432" y="126" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578279340204" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

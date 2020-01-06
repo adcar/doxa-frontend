@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(5),
     margin: theme.spacing(2),
     [theme.breakpoints.up("md")]: {
-      marginLeft: theme.spacing(15)
+      marginLeft: theme.spacing(16)
     },
 
     boxShadow:
@@ -30,9 +30,9 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "center",
     [theme.breakpoints.up("md")]: {
-      height: `calc(100vh - 180px)`,
+      height: `calc(100vh - 170px)`,
       justifyContent: "flex-start",
-      backgroundPosition: "right",
+      backgroundPosition: `right ${theme.spacing(16)}px center`,
       backgroundImage: `url(${splash})`,
       backgroundSize: `60vw auto`,
       backgroundRepeat: "no-repeat",
