@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import h2p from "html2plaintext";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -229,7 +230,7 @@ export default function TweetTable({ tweets }) {
                           overflowY: "auto"
                         }}
                       >
-                        {row.content}
+                        {h2p(row.content)}
                       </div>
                     </TableCell>
                     <TableCell className={classes.tableCell}>
