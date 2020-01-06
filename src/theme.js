@@ -26,7 +26,7 @@ export default function getTheme(theme) {
         },
         background: {
           default: theme.paletteType === "light" ? "#FFFFFF" : "#2f2f31",
-          other: theme.paletteType === "light" ? "#e3e3e3" : "#474747",
+          other: theme.paletteType === "light" ? "#E2E7F9" : "#474747",
           paper: theme.paletteType === "light" ? "#EFF1F9" : "#3b3b3b"
         }
       },
