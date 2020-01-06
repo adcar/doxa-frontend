@@ -119,8 +119,8 @@ export default function Index() {
                   your business / stock / etc. In other words: you can gain
                   insight into how well liked or disliked something is. Doxa
                   performs automated sentiment analysis on hundreds of Tweets
-                  for an accurate represention of the overall sentiment towards
-                  your business.
+                  for an accurate representation of the overall sentiment
+                  towards your business.
                 </Typography>
               </div>
             </Grid>
