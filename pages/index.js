@@ -9,6 +9,13 @@ import splash from "../public/splash.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import analysis from "../public/undraw_analysis.svg";
 import ai from "../public/undraw_artificial_intelligence.svg";
+import dashboard from "../public/undraw_dashboard.svg";
+
+const panelStyles = theme => ({
+  padding: `${theme.spacing(8)}px 0`,
+  borderTopLeftRadius: theme.shape.borderRadius,
+  borderTopRightRadius: theme.shape.borderRadius
+});
 
 const useStyles = makeStyles(theme => ({
   form: {
@@ -52,19 +59,20 @@ const useStyles = makeStyles(theme => ({
   panel1: {
     backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(4),
-    padding: `${theme.spacing(8)}px 0`,
-    paddingBottom: theme.spacing(12),
-    borderTopLeftRadius: theme.shape.borderRadius,
-    borderTopRightRadius: theme.shape.borderRadius
+    ...panelStyles(theme),
+    paddingBottom: theme.spacing(12)
   },
   panel2: {
     position: "relative",
     top: -1 * theme.spacing(4),
     backgroundColor: theme.palette.background.default,
-
-    padding: `${theme.spacing(8)}px 0`,
-    borderTopLeftRadius: theme.shape.borderRadius,
-    borderTopRightRadius: theme.shape.borderRadius
+    ...panelStyles(theme)
+  },
+  panel3: {
+    backgroundColor: theme.palette.background.other,
+    ...panelStyles(theme),
+    paddingBottom: theme.spacing(20),
+    marginBottom: -1 * theme.spacing(8)
   },
   desc: {
     paddingRight: theme.spacing(2),
@@ -110,8 +118,9 @@ export default function Index() {
                   Sentiment analysis lets you get a feel for how people think of
                   your business / stock / etc. In other words: you can gain
                   insight into how well liked or disliked something is. Doxa
-                  performs automated sentiment analysis on hundreds of Tweets to
-                  see how liked something is.
+                  performs automated sentiment analysis on hundreds of Tweets
+                  for an accurate represention of the overall sentiment towards
+                  your business.
                 </Typography>
               </div>
             </Grid>
@@ -154,6 +163,39 @@ export default function Index() {
               <img
                 src={ai}
                 alt="Sentiment analysis"
+                style={{
+                  width: "100%"
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+      <div className={classes.panel3}>
+        <Container>
+          <Grid container spacing={4} alignItems="center" align="left">
+            <Grid item sm={6} xs={12} className={classes.desc}>
+              <div className={classes.desc}>
+                <Typography variant="h3" color="primary" gutterBottom>
+                  How do I interpret the results?
+                </Typography>
+                <Typography>
+                  Once you enter your term, Doxa will present you with a
+                  "sentiment score" from -100 to 100 (-100 being the worst
+                  possible sentiment and 100 being the best possible sentiment).
+                  This score reflects average sentiment of your business. Doxa
+                  automatically weighs Tweets by their favorites count, so a
+                  Tweet with 100 likes is worth 100 times as much as a tweet
+                  with 1 like. This allows you to get an average sentiment score
+                  that accurately reflects the overall sentiment towards your
+                  business.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <img
+                src={dashboard}
+                alt="Doxa's dashboard"
                 style={{
                   width: "100%"
                 }}
