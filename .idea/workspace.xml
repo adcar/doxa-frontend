@@ -4,6 +4,7 @@
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,14 +183,7 @@
       <workItem from="1576427343703" duration="13911000" />
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
-      <workItem from="1577937278889" duration="77420000" />
-    </task>
-    <task id="LOCAL-00028" summary="Added a footer">
-      <created>1575606751930</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1575606751930</updated>
+      <workItem from="1577937278889" duration="79464000" />
     </task>
     <task id="LOCAL-00029" summary="Begin tests">
       <created>1576433476677</created>
@@ -527,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578287951504</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Removed some padding to make the landing page more mobile-friendly">
+      <created>1578288449555</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1578288449555</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Improved designs of analyze inputs" />
     <MESSAGE value="Re-enabled the dark theme" />
     <MESSAGE value="Navbar: only marginBottom if divider is enabled" />
     <MESSAGE value="Improved position of form, submit button, and made responsiveness better" />
@@ -573,7 +573,8 @@
     <MESSAGE value="Made background image closer to the center" />
     <MESSAGE value="Added the &quot;Dribble&quot; corners to footer" />
     <MESSAGE value="Added more information to the landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more information to the landing page" />
+    <MESSAGE value="Removed some padding to make the landing page more mobile-friendly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some padding to make the landing page more mobile-friendly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -588,10 +589,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="357" y="16" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578287951434">
+    <state x="355" y="-2" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578288449402">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="357" y="16" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578287951434" />
+    <state x="355" y="-2" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578288449402" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -672,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="426" y="72" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578287955808">
+    <state x="424" y="54" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578288464948">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="426" y="72" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578287955808" />
+    <state x="424" y="54" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578288464948" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -684,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="761" y="344" width="387" height="351" key="export.test.results/0.0.1920.1080@0.0.1920.1080" timestamp="1576429832205" />
-    <state x="627" y="123" width="810" height="840" key="find.popup" timestamp="1578207264093">
+    <state x="627" y="123" width="810" height="840" key="find.popup" timestamp="1578289288480">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="627" y="123" width="810" height="840" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578207264093" />
+    <state x="627" y="123" width="810" height="840" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578289288480" />
     <state x="667" y="300" width="576" height="439" key="git4idea.merge.GitPullDialog" timestamp="1577921560015">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

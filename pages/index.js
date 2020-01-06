@@ -65,6 +65,10 @@ const useStyles = makeStyles(theme => ({
     padding: `${theme.spacing(8)}px 0`,
     borderTopLeftRadius: theme.shape.borderRadius,
     borderTopRightRadius: theme.shape.borderRadius
+  },
+  desc: {
+    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(2)
   }
 }));
 
@@ -96,20 +100,23 @@ export default function Index() {
       </div>
       <div className={classes.panel1}>
         <Container>
-          <Grid container spacing={4} alignItems="center">
-            <Grid item md={6} xs={12} justify="left">
-              <Typography variant="h3" color="primary" gutterBottom>
-                What is Sentiment Analysis?
-              </Typography>
-              <Typography>
-                Sentiment analysis lets you get a feel for how people think of
-                your business / stock / etc. In other words: you can gain
-                insight into how well liked or disliked something is. Doxa
-                performs automated sentiment analysis on hundreds of Tweets to
-                see how liked something is.
-              </Typography>
+          <Grid container spacing={4} alignItems="center" align="left">
+            <Grid item sm={6} xs={12}>
+              <div className={classes.desc}>
+                <Typography variant="h3" color="primary" gutterBottom>
+                  What is Sentiment Analysis?
+                </Typography>
+                <Typography>
+                  Sentiment analysis lets you get a feel for how people think of
+                  your business / stock / etc. In other words: you can gain
+                  insight into how well liked or disliked something is. Doxa
+                  performs automated sentiment analysis on hundreds of Tweets to
+                  see how liked something is.
+                </Typography>
+              </div>
             </Grid>
-            <Grid item md={6} xs={0}>
+
+            <Grid item sm={6} xs={12}>
               <img
                 src={analysis}
                 alt="Sentiment analysis"
@@ -123,8 +130,27 @@ export default function Index() {
       </div>
       <div className={classes.panel2}>
         <Container>
-          <Grid container spacing={4} alignItems="center" align="right">
-            <Grid item md={6} xs={0}>
+          <Grid
+            container
+            spacing={4}
+            alignItems="center"
+            align="right"
+            direction="row-reverse"
+          >
+            <Grid item sm={6} xs={12} className={classes.desc}>
+              <div className={classes.desc}>
+                <Typography variant="h3" color="primary" gutterBottom>
+                  How does it work?
+                </Typography>
+                <Typography>
+                  Doxa uses a sentiment analysis tool called Valence Aware
+                  Dictionary and sEntiment Reasoner (VADER). This tool utilizes
+                  artificial intelligence to process language and determine what
+                  is positive, negative, or neutral.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item sm={6} xs={12}>
               <img
                 src={ai}
                 alt="Sentiment analysis"
@@ -132,17 +158,6 @@ export default function Index() {
                   width: "100%"
                 }}
               />
-            </Grid>
-            <Grid item md={6} xs={12}>
-              <Typography variant="h3" color="primary" gutterBottom>
-                How does it work?
-              </Typography>
-              <Typography>
-                Doxa uses a sentiment analysis tool called Valence Aware
-                Dictionary and sEntiment Reasoner (VADER). This tool utilizes
-                artificial intelligence to process language and determine what
-                is positive, negative, or neutral.
-              </Typography>
             </Grid>
           </Grid>
         </Container>
