@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Tweets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +189,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="7197000" />
-    </task>
-    <task id="LOCAL-00040" summary="Changed splash text to white">
-      <created>1578037143249</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1578037143249</updated>
+      <workItem from="1578342771946" duration="24127000" />
     </task>
     <task id="LOCAL-00041" summary="Changed splash text to light purple">
       <created>1578037763038</created>
@@ -528,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578374143960</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Removed the word &quot;term&quot; from loader">
+      <created>1578375116336</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1578375116336</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,8 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Improved positioning of SentimentGauge.js" />
-    <MESSAGE value="Fixed a bug that shows 0 if there is no tweets for a category" />
     <MESSAGE value="Fix Typo" />
     <MESSAGE value="Improved positioning of the label" />
     <MESSAGE value="Made innerText larger on larger devices" />
@@ -574,7 +578,9 @@
     <MESSAGE value="Enabled autofocus" />
     <MESSAGE value="Added bounces to images" />
     <MESSAGE value="Removed text alignment. Left aligned text tends to look better and is more legible." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed text alignment. Left aligned text tends to look better and is more legible." />
+    <MESSAGE value="Removed the word &quot;term&quot; from loader" />
+    <MESSAGE value="Add &quot;name&quot; and &quot;profileImage&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;name&quot; and &quot;profileImage&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +595,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="325" y="-86" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578374143805">
+    <state x="317" y="-158" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578438975929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="325" y="-86" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578374143805" />
+    <state x="317" y="-158" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578438975929" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -601,22 +607,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578375083159">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578438976016">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578375083159" />
-    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578375083158">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976016" />
+    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578438976014">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578375083158" />
-    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578375083158">
+    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976014" />
+    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578438976014">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578375083158" />
-    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578375083158">
+    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976014" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578438976015">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578375083158" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976015" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

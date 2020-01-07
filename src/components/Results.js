@@ -10,7 +10,7 @@ import "./twemoji.css";
 import SentimentGauge from "./SentimentGauge";
 import TweetCountPie from "./TweetCountPie";
 import TweetTable from "./TweetTable";
-import Tweet from "./Tweet";
+import Tweets from "./Tweets";
 import undrawEmpty from "../../public/undraw_empty.svg";
 import SiteError from "./SiteError";
 
@@ -30,6 +30,10 @@ const GET_SENTIMENT = gql`
             normalizedSentiment
             favorites
             retweets
+            profileImage
+            name
+            tweetId
+            createdAt
             id
           }
         }
@@ -59,13 +63,13 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: theme.spacing(8)
   },
   gauge: {
     [theme.breakpoints.up("lg")]: {
       margin: 0
-    },
-    marginBottom: theme.spacing(8)
+    }
   }
 }));
 
@@ -104,6 +108,10 @@ export default function Results({ term }) {
       return <p>An unknown error has occurred</p>;
     }
   }
+
+  const topTweets = data.sentiment.tweets.edges.sort((a, b) =>
+    a.node.favorites > b.node.favorites ? -1 : 1
+  );
 
   const {
     averageWeighedPolarity,
@@ -160,7 +168,7 @@ export default function Results({ term }) {
           "{term}"
         </Typography>
       </Typography>
-      <Grid container justify="center">
+      <Grid container justify="center" spacing={8}>
         <Grid item lg={6} className={classes.gauge}>
           <Typography {...labelProps} style={{ maxWidth: 500 }}>
             Sentiment Score
@@ -173,6 +181,26 @@ export default function Results({ term }) {
             Tweets
           </Typography>
           <TweetCountPie {...chartProps} />
+        </Grid>
+        <Grid item sm={12}>
+          <Typography variant="h4" component="h2" align="center" gutterBottom>
+            What people are saying about{" "}
+            <Typography color="primary" variant="inherit">
+              "{term}"
+            </Typography>
+          </Typography>
+          <Typography variant="subtitle1" align="center">
+            Top 6 Tweets sorted by favorites
+          </Typography>
+        </Grid>
+        <Grid item sm={12}>
+          <Tweets className={classes.tweets} tweets={topTweets} term={term} />
+        </Grid>
+
+        <Grid item sm={12}>
+          <Typography variant="h4" component="h2" align="center" gutterBottom>
+            All Tweets
+          </Typography>
         </Grid>
         <Grid item sm={12}>
           <TweetTable

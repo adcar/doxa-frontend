@@ -1,57 +1,155 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import Linkify from "react-linkify";
+import Highlighter from "react-highlight-words";
 
-const useStyles = makeStyles({
-  card: {
-    minWidth: 275
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: `${theme.spacing(2)}px ${theme.spacing(3)}px`,
+    height: 225,
+    display: "flex",
+    cursor: "pointer",
+    boxShadow: "none",
+    "&:hover": {
+      boxShadow: "0px 10px 15px rgba(0,0,0,0.25)"
+    }
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
+  profileImage: {
+    borderRadius: theme.shape.borderRadius,
+    marginRight: theme.spacing(2)
   },
-  title: {
-    fontSize: 14
+  tweetBody: {
+    flex: 1
   },
-  pos: {
-    marginBottom: 12
+  btnLabel: {
+    fontSize: 12
+  },
+  highlighted: {
+    backgroundColor: "transparent",
+    fontFamily: theme.typography.fontFamily,
+    color: theme.palette.primary.main
   }
-});
+}));
 
-export default function Tweet() {
+export default function Tweet({
+  favorites,
+  retweets,
+  username,
+  name,
+  profileImage,
+  content,
+  tweetId,
+  createdAt,
+  term
+}) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+  const highlightProps = {
+    highlightClassName: classes.highlighted,
+    searchWords: [term],
+    autoEscape: true
+  };
+  let truncatedContent = content;
+  let truncatedContentElem = (
+    <span>
+      {" "}
+      <Highlighter {...highlightProps} textToHighlight={content} />
+    </span>
+  );
+
+  if (content.length > 100) {
+    truncatedContent = content.slice(0, 100);
+    truncatedContentElem = (
+      <span>
+        <Highlighter {...highlightProps} textToHighlight={truncatedContent} />
+        ...{" "}
+        <Link
+          href={`https://twitter.com/${username}/status/${tweetId}`}
+          target="_blank"
+        >
+          {" "}
+          Read more
+        </Link>
+      </span>
+    );
+  }
+  const componentDecorator = (href, text, key) => (
+    <Link href={href} key={key} target="_blank">
+      {text}
+    </Link>
+  );
 
   return (
-    <Card className={classes.card}>
-      <CardContent>
-        <Typography
-          className={classes.title}
-          color="textSecondary"
-          gutterBottom
-        >
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <Paper
+      className={classes.root}
+      onClick={() =>
+        window.open(
+          `https://twitter.com/${username}/status/${tweetId}`,
+          "_blank"
+        )
+      }
+    >
+      <Grid container alignItems="center">
+        <Grid item xs={12}>
+          <div
+            style={{
+              display: "flex"
+            }}
+          >
+            <img
+              className={classes.profileImage}
+              src={profileImage}
+              alt={`${username}'s profile picture`}
+            />
+            <div>
+              <Typography>{name}</Typography>
+              <Typography variant="caption">@{username}</Typography>
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography
+            variant="body2"
+            style={{
+              height: "100%"
+            }}
+          >
+            <Linkify componentDecorator={componentDecorator}>
+              {truncatedContentElem}
+            </Linkify>
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="caption">
+            <strong>{favorites}</strong> {favorites === 1 ? "Like" : "Likes"}{" "}
+            {"‏‏‎ ‎‏‏‎ ‎"}
+            <strong>{retweets}</strong>{" "}
+            {retweets === 1 ? "Retweet" : "Retweets"}
+          </Typography>
+        </Grid>
+        <Grid item xs={6}>
+          <Typography variant="caption">
+            {createdAt.replace("T", " ")}
+          </Typography>
+        </Grid>
+
+        <Grid item xs={6} align="right">
+          <Button
+            component={Link}
+            href={`https://twitter.com/${username}/status/${tweetId}`}
+            target="_blank"
+            classes={{
+              label: classes.btnLabel
+            }}
+          >
+            View on Twitter
+          </Button>
+        </Grid>
+      </Grid>
+    </Paper>
   );
 }
