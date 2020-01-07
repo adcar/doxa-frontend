@@ -6,6 +6,7 @@ import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Linkify from "react-linkify";
+import h2p from "html2plaintext";
 import Highlighter from "react-highlight-words";
 
 const useStyles = makeStyles(theme => ({
@@ -53,16 +54,16 @@ export default function Tweet({
     searchWords: [term],
     autoEscape: true
   };
-  let truncatedContent = content;
+  let truncatedContent = h2p(content);
   let truncatedContentElem = (
     <span>
       {" "}
-      <Highlighter {...highlightProps} textToHighlight={content} />
+      <Highlighter {...highlightProps} textToHighlight={h2p(content)} />
     </span>
   );
 
   if (content.length > 100) {
-    truncatedContent = content.slice(0, 100);
+    truncatedContent = h2p(content).slice(0, 100);
     truncatedContentElem = (
       <span>
         <Highlighter {...highlightProps} textToHighlight={truncatedContent} />
