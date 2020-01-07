@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import analysis from "../public/undraw_analysis.svg";
 import ai from "../public/undraw_artificial_intelligence.svg";
 import dashboard from "../public/undraw_dashboard.svg";
+import Fade from "react-reveal/Fade";
+import "./index.css";
 
 const panelStyles = theme => ({
   padding: `${theme.spacing(8)}px 0`,
@@ -108,100 +110,107 @@ export default function Index() {
       </div>
       <div className={classes.panel1}>
         <Container>
-          <Grid container spacing={4} alignItems="center" align="left">
-            <Grid item sm={6} xs={12}>
-              <div className={classes.desc}>
-                <Typography variant="h3" color="primary" gutterBottom>
-                  What is Sentiment Analysis?
-                </Typography>
-                <Typography>
-                  Sentiment analysis lets you get a feel for how people think of
-                  your business / stock / etc. In other words: you can gain
-                  insight into how well liked or disliked something is. Doxa
-                  performs automated sentiment analysis on hundreds of Tweets
-                  for an accurate representation of the overall sentiment
-                  towards your business.
-                </Typography>
-              </div>
-            </Grid>
+          <Fade right>
+            <Grid container spacing={4} alignItems="center" align="left">
+              <Grid item sm={6} xs={12}>
+                <div className={classes.desc}>
+                  <Typography variant="h3" color="primary" gutterBottom>
+                    What is Sentiment Analysis?
+                  </Typography>
+                  <Typography>
+                    Sentiment analysis lets you get a feel for how people think
+                    of your business / stock / etc. In other words: you can gain
+                    insight into how well liked or disliked something is. Doxa
+                    performs automated sentiment analysis on hundreds of Tweets
+                    for an accurate representation of the overall sentiment
+                    towards your business.
+                  </Typography>
+                </div>
+              </Grid>
 
-            <Grid item sm={6} xs={12}>
-              <img
-                src={analysis}
-                alt="Sentiment analysis"
-                style={{
-                  width: "100%"
-                }}
-              />
+              <Grid item sm={6} xs={12}>
+                <img
+                  src={analysis}
+                  alt="Sentiment analysis"
+                  style={{
+                    width: "100%"
+                  }}
+                />
+              </Grid>
             </Grid>
-          </Grid>
+          </Fade>
         </Container>
       </div>
       <div className={classes.panel2}>
         <Container>
-          <Grid
-            container
-            spacing={4}
-            alignItems="center"
-            align="left"
-            direction="row-reverse"
-          >
-            <Grid item sm={6} xs={12} className={classes.desc}>
-              <div className={classes.desc}>
-                <Typography variant="h3" color="primary" gutterBottom>
-                  How do I interpret the results?
-                </Typography>
-                <Typography>
-                  Once you enter your term, Doxa will present you with a
-                  "sentiment score" from -100 to 100 (-100 being the worst
-                  possible sentiment and 100 being the best possible sentiment).
-                  This score reflects average sentiment of your business. Doxa
-                  automatically weighs Tweets by their favorites count, so a
-                  Tweet with 100 likes is worth 100 times as much as a tweet
-                  with 1 like. This allows you to get an average sentiment score
-                  that accurately reflects the overall sentiment towards your
-                  business.
-                </Typography>
-              </div>
+          <Fade left>
+            <Grid
+              container
+              spacing={4}
+              alignItems="center"
+              align="left"
+              direction="row-reverse"
+            >
+              <Grid item sm={6} xs={12} className={classes.desc}>
+                <div className={classes.desc}>
+                  <Typography variant="h3" color="primary" gutterBottom>
+                    How do I interpret the results?
+                  </Typography>
+                  <Typography>
+                    Once you enter your term, Doxa will present you with a
+                    "sentiment score" from -100 to 100 (-100 being the worst
+                    possible sentiment and 100 being the best possible
+                    sentiment). This score reflects average sentiment of your
+                    business. Doxa automatically weighs Tweets by their
+                    favorites count, so a Tweet with 100 likes is worth 100
+                    times as much as a tweet with 1 like. This allows you to get
+                    an average sentiment score that accurately reflects the
+                    overall sentiment towards your business.
+                  </Typography>
+                </div>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                <img
+                  src={dashboard}
+                  alt="Doxa's dashboard"
+                  style={{
+                    width: "100%"
+                  }}
+                />
+              </Grid>
             </Grid>
-            <Grid item sm={6} xs={12}>
-              <img
-                src={dashboard}
-                alt="Doxa's dashboard"
-                style={{
-                  width: "100%"
-                }}
-              />
-            </Grid>
-          </Grid>
+          </Fade>
         </Container>
       </div>
+
       <div className={classes.panel3}>
         <Container>
-          <Grid container spacing={4} alignItems="center" align="right">
-            <Grid item sm={6} xs={12} className={classes.desc}>
-              <div className={classes.desc}>
-                <Typography variant="h3" color="primary" gutterBottom>
-                  How does it work?
-                </Typography>
-                <Typography>
-                  Doxa uses a sentiment analysis tool called Valence Aware
-                  Dictionary and sEntiment Reasoner (VADER). This tool utilizes
-                  artificial intelligence to process language and determine what
-                  is positive, negative, or neutral.
-                </Typography>
-              </div>
+          <Fade right>
+            <Grid container spacing={4} alignItems="center" align="right">
+              <Grid item sm={6} xs={12} className={classes.desc}>
+                <div className={classes.desc}>
+                  <Typography variant="h3" color="primary" gutterBottom>
+                    How does it work?
+                  </Typography>
+                  <Typography>
+                    Doxa uses a sentiment analysis tool called Valence Aware
+                    Dictionary and sEntiment Reasoner (VADER). This tool
+                    utilizes artificial intelligence to process language and
+                    determine what is positive, negative, or neutral.
+                  </Typography>
+                </div>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                <img
+                  src={ai}
+                  alt="Sentiment analysis"
+                  style={{
+                    width: "100%"
+                  }}
+                />
+              </Grid>
             </Grid>
-            <Grid item sm={6} xs={12}>
-              <img
-                src={ai}
-                alt="Sentiment analysis"
-                style={{
-                  width: "100%"
-                }}
-              />
-            </Grid>
-          </Grid>
+          </Fade>
         </Container>
       </div>
     </div>

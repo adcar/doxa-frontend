@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -182,14 +186,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="4406000" />
-    </task>
-    <task id="LOCAL-00035" summary="Styled the Tweet table to make it more rounded">
-      <created>1578012958460</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1578012958460</updated>
+      <workItem from="1578342771946" duration="5847000" />
     </task>
     <task id="LOCAL-00036" summary="Fixed positioning issues on the table, removed toolbar">
       <created>1578016924289</created>
@@ -527,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578347507949</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Changed background color of panel 3 to paper and moved the panels around so that &quot;How does it work&quot; is last">
+      <created>1578372204003</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1578372204003</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed Firefox issues" />
     <MESSAGE value="Fixed responsive issue on footer" />
     <MESSAGE value="Changed splash image to a more transparent one to make dark mode look better" />
     <MESSAGE value="Made the splash image a bit larger" />
@@ -573,7 +576,8 @@
     <MESSAGE value="Added a new panel. Changed some wording" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Convert HTML codes to plaintext (like &amp;amp;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert HTML codes to plaintext (like &amp;amp;)" />
+    <MESSAGE value="Changed background color of panel 3 to paper and moved the panels around so that &quot;How does it work&quot; is last" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed background color of panel 3 to paper and moved the panels around so that &quot;How does it work&quot; is last" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -588,10 +592,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="337" y="22" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578347507867">
+    <state x="333" y="-14" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578373529017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="337" y="22" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578347507867" />
+    <state x="333" y="-14" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578373529017" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -600,22 +604,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578347319679">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578372237663">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578347319679" />
-    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578347319679">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578372237663" />
+    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578372237662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578347319679" />
-    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578347319678">
+    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578372237662" />
+    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578372237662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578347319678" />
-    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578347319679">
+    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578372237662" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578372237662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578347319679" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578372237662" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -664,18 +668,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1897" height="306" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576517597591" />
-    <state x="763" y="100" width="372" height="732" key="RollbackChangesDialog" timestamp="1578207229037">
+    <state x="761" y="82" width="372" height="732" key="RollbackChangesDialog" timestamp="1578373184864">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="763" y="100" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578207229037" />
+    <state x="761" y="82" width="372" height="732" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578373184864" />
     <state x="454" y="160" key="SettingsEditor" timestamp="1578254704997">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="418" y="0" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578347510206">
+    <state x="519" y="111" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578372214299">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="418" y="0" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578347510206" />
+    <state x="519" y="111" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578372214299" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
