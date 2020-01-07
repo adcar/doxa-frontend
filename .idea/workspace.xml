@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +183,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="5847000" />
-    </task>
-    <task id="LOCAL-00036" summary="Fixed positioning issues on the table, removed toolbar">
-      <created>1578016924289</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1578016924289</updated>
+      <workItem from="1578342771946" duration="6091000" />
     </task>
     <task id="LOCAL-00037" summary="Optimized dark theme">
       <created>1578034025793</created>
@@ -531,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578372204003</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Added some animations">
+      <created>1578373539920</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1578373539920</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed responsive issue on footer" />
     <MESSAGE value="Changed splash image to a more transparent one to make dark mode look better" />
     <MESSAGE value="Made the splash image a bit larger" />
     <MESSAGE value="Added some undraw assets" />
@@ -577,7 +573,8 @@
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Convert HTML codes to plaintext (like &amp;amp;)" />
     <MESSAGE value="Changed background color of panel 3 to paper and moved the panels around so that &quot;How does it work&quot; is last" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed background color of panel 3 to paper and moved the panels around so that &quot;How does it work&quot; is last" />
+    <MESSAGE value="Added some animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some animations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -592,10 +589,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="333" y="-14" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578373529017">
+    <state x="331" y="-32" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578373539693">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="333" y="-14" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578373529017" />
+    <state x="331" y="-32" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578373539693" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

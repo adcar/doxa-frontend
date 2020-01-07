@@ -75,9 +75,11 @@ export default function MainSearch() {
           pathname: "/results",
           query: { term }
         }).then(() => window.scrollTo(0, 0));
+        1;
       }}
     >
       <input
+        autoFocus
         type="text"
         className={classes.input}
         onChange={e => setTerm(e.target.value)}
