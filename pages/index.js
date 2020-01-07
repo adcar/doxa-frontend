@@ -11,6 +11,7 @@ import analysis from "../public/undraw_analysis.svg";
 import ai from "../public/undraw_artificial_intelligence.svg";
 import dashboard from "../public/undraw_dashboard.svg";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 import "./index.css";
 
 const panelStyles = theme => ({
@@ -110,9 +111,9 @@ export default function Index() {
       </div>
       <div className={classes.panel1}>
         <Container>
-          <Fade right>
-            <Grid container spacing={4} alignItems="center" align="left">
-              <Grid item sm={6} xs={12}>
+          <Grid container spacing={4} alignItems="center" align="left">
+            <Grid item sm={6} xs={12}>
+              <Fade right>
                 <div className={classes.desc}>
                   <Typography variant="h3" color="primary" gutterBottom>
                     What is Sentiment Analysis?
@@ -126,9 +127,11 @@ export default function Index() {
                     towards your business.
                   </Typography>
                 </div>
-              </Grid>
+              </Fade>
+            </Grid>
 
-              <Grid item sm={6} xs={12}>
+            <Grid item sm={6} xs={12}>
+              <Bounce>
                 <img
                   src={analysis}
                   alt="Sentiment analysis"
@@ -136,22 +139,22 @@ export default function Index() {
                     width: "100%"
                   }}
                 />
-              </Grid>
+              </Bounce>
             </Grid>
-          </Fade>
+          </Grid>
         </Container>
       </div>
       <div className={classes.panel2}>
         <Container>
-          <Fade left>
-            <Grid
-              container
-              spacing={4}
-              alignItems="center"
-              align="left"
-              direction="row-reverse"
-            >
-              <Grid item sm={6} xs={12} className={classes.desc}>
+          <Grid
+            container
+            spacing={4}
+            alignItems="center"
+            align="left"
+            direction="row-reverse"
+          >
+            <Grid item sm={6} xs={12}>
+              <Fade left>
                 <div className={classes.desc}>
                   <Typography variant="h3" color="primary" gutterBottom>
                     How do I interpret the results?
@@ -168,8 +171,10 @@ export default function Index() {
                     overall sentiment towards your business.
                   </Typography>
                 </div>
-              </Grid>
-              <Grid item sm={6} xs={12}>
+              </Fade>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <Bounce>
                 <img
                   src={dashboard}
                   alt="Doxa's dashboard"
@@ -177,17 +182,17 @@ export default function Index() {
                     width: "100%"
                   }}
                 />
-              </Grid>
+              </Bounce>
             </Grid>
-          </Fade>
+          </Grid>
         </Container>
       </div>
 
       <div className={classes.panel3}>
         <Container>
-          <Fade right>
-            <Grid container spacing={4} alignItems="center" align="right">
-              <Grid item sm={6} xs={12} className={classes.desc}>
+          <Grid container spacing={4} alignItems="center" align="right">
+            <Grid item sm={6} xs={12} className={classes.desc}>
+              <Fade right>
                 <div className={classes.desc}>
                   <Typography variant="h3" color="primary" gutterBottom>
                     How does it work?
@@ -199,8 +204,10 @@ export default function Index() {
                     determine what is positive, negative, or neutral.
                   </Typography>
                 </div>
-              </Grid>
-              <Grid item sm={6} xs={12}>
+              </Fade>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <Bounce>
                 <img
                   src={ai}
                   alt="Sentiment analysis"
@@ -208,9 +215,9 @@ export default function Index() {
                     width: "100%"
                   }}
                 />
-              </Grid>
+              </Bounce>
             </Grid>
-          </Fade>
+          </Grid>
         </Container>
       </div>
     </div>
