@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,21 +182,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="2871000" />
-    </task>
-    <task id="LOCAL-00033" summary="Fixed coloring issue on table">
-      <created>1578001806739</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1578001806739</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Fixed alignment issues">
-      <created>1578004926502</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1578004926502</updated>
+      <workItem from="1578342771946" duration="4406000" />
     </task>
     <task id="LOCAL-00035" summary="Styled the Tweet table to make it more rounded">
       <created>1578012958460</created>
@@ -528,7 +513,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578346593602</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Fix typo">
+      <created>1578347403213</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1578347403213</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Convert HTML codes to plaintext (like &amp;amp;)">
+      <created>1578347507949</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1578347507949</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changed &quot;bitcoin&quot; to &quot;business name&quot;" />
     <MESSAGE value="Fixed Firefox issues" />
     <MESSAGE value="Fixed responsive issue on footer" />
     <MESSAGE value="Changed splash image to a more transparent one to make dark mode look better" />
@@ -557,7 +555,6 @@
     <MESSAGE value="Added some undraw assets" />
     <MESSAGE value="Improved positioning of SentimentGauge.js" />
     <MESSAGE value="Fixed a bug that shows 0 if there is no tweets for a category" />
-    <MESSAGE value="Fix typo" />
     <MESSAGE value="Fix Typo" />
     <MESSAGE value="Improved positioning of the label" />
     <MESSAGE value="Made innerText larger on larger devices" />
@@ -574,7 +571,9 @@
     <MESSAGE value="Changed paper color" />
     <MESSAGE value="Changed other to a more blueish color" />
     <MESSAGE value="Added a new panel. Changed some wording" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new panel. Changed some wording" />
+    <MESSAGE value="Fix typo" />
+    <MESSAGE value="Convert HTML codes to plaintext (like &amp;amp;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert HTML codes to plaintext (like &amp;amp;)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="339" y="40" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578347403100">
+    <state x="337" y="22" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578347507867">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="339" y="40" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578347403100" />
+    <state x="337" y="22" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578347507867" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="420" y="18" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578346595591">
+    <state x="418" y="0" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578347510206">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="420" y="18" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578346595591" />
+    <state x="418" y="0" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578347510206" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

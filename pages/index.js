@@ -69,7 +69,7 @@ const useStyles = makeStyles(theme => ({
     ...panelStyles(theme)
   },
   panel3: {
-    backgroundColor: theme.palette.background.other,
+    backgroundColor: theme.palette.background.paper,
     ...panelStyles(theme),
     paddingBottom: theme.spacing(20),
     marginBottom: -1 * theme.spacing(8)
@@ -143,37 +143,9 @@ export default function Index() {
             container
             spacing={4}
             alignItems="center"
-            align="right"
+            align="left"
             direction="row-reverse"
           >
-            <Grid item sm={6} xs={12} className={classes.desc}>
-              <div className={classes.desc}>
-                <Typography variant="h3" color="primary" gutterBottom>
-                  How does it work?
-                </Typography>
-                <Typography>
-                  Doxa uses a sentiment analysis tool called Valence Aware
-                  Dictionary and sEntiment Reasoner (VADER). This tool utilizes
-                  artificial intelligence to process language and determine what
-                  is positive, negative, or neutral.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item sm={6} xs={12}>
-              <img
-                src={ai}
-                alt="Sentiment analysis"
-                style={{
-                  width: "100%"
-                }}
-              />
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
-      <div className={classes.panel3}>
-        <Container>
-          <Grid container spacing={4} alignItems="center" align="left">
             <Grid item sm={6} xs={12} className={classes.desc}>
               <div className={classes.desc}>
                 <Typography variant="h3" color="primary" gutterBottom>
@@ -196,6 +168,34 @@ export default function Index() {
               <img
                 src={dashboard}
                 alt="Doxa's dashboard"
+                style={{
+                  width: "100%"
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+      <div className={classes.panel3}>
+        <Container>
+          <Grid container spacing={4} alignItems="center" align="right">
+            <Grid item sm={6} xs={12} className={classes.desc}>
+              <div className={classes.desc}>
+                <Typography variant="h3" color="primary" gutterBottom>
+                  How does it work?
+                </Typography>
+                <Typography>
+                  Doxa uses a sentiment analysis tool called Valence Aware
+                  Dictionary and sEntiment Reasoner (VADER). This tool utilizes
+                  artificial intelligence to process language and determine what
+                  is positive, negative, or neutral.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <img
+                src={ai}
+                alt="Sentiment analysis"
                 style={{
                   width: "100%"
                 }}
