@@ -111,7 +111,7 @@ export default function Index() {
       </div>
       <div className={classes.panel1}>
         <Container>
-          <Grid container spacing={4} alignItems="center" align="left">
+          <Grid container spacing={4} alignItems="center">
             <Grid item sm={6} xs={12}>
               <Fade right>
                 <div className={classes.desc}>
@@ -150,7 +150,6 @@ export default function Index() {
             container
             spacing={4}
             alignItems="center"
-            align="left"
             direction="row-reverse"
           >
             <Grid item sm={6} xs={12}>
@@ -190,7 +189,7 @@ export default function Index() {
 
       <div className={classes.panel3}>
         <Container>
-          <Grid container spacing={4} alignItems="center" align="right">
+          <Grid container spacing={4} alignItems="center">
             <Grid item sm={6} xs={12} className={classes.desc}>
               <Fade right>
                 <div className={classes.desc}>
