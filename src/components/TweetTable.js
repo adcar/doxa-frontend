@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import h2p from "html2plaintext";
@@ -161,6 +161,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function TweetTable({ tweets }) {
+  const tableEl = useRef(null);
   let rows = [];
   tweets.edges.forEach(({ node }) => rows.push(node));
 
@@ -177,6 +178,7 @@ export default function TweetTable({ tweets }) {
   };
 
   const handleChangePage = (event, newPage) => {
+    tableEl.current.scrollTop = 0; // Result the scroll when the user goes to a new page
     setPage(newPage);
   };
 
@@ -191,6 +193,7 @@ export default function TweetTable({ tweets }) {
   return (
     <div className={classes.root}>
       <div
+        ref={tableEl}
         className={classes.tableContainer}
         style={{
           height: 750

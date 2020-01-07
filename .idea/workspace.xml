@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TweetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +183,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="25174000" />
-    </task>
-    <task id="LOCAL-00042" summary="Made paper color slightly darker">
-      <created>1578038751569</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1578038751569</updated>
+      <workItem from="1578342771946" duration="26093000" />
     </task>
     <task id="LOCAL-00043" summary="Removed Gauge.css">
       <created>1578099749046</created>
@@ -528,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578438995762</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Added h2p to content">
+      <created>1578440531441</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1578440531441</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Improved positioning of the label" />
     <MESSAGE value="Made innerText larger on larger devices" />
     <MESSAGE value="Scroll to top when searching using the main search" />
     <MESSAGE value="Scroll to top when analyzing using the main search" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Removed the word &quot;term&quot; from loader" />
     <MESSAGE value="Add &quot;name&quot; and &quot;profileImage&quot;" />
     <MESSAGE value="Displayed Tweets and changed theme color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displayed Tweets and changed theme color" />
+    <MESSAGE value="Added h2p to content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added h2p to content" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +589,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="313" y="-194" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578440456925">
+    <state x="311" y="-212" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578440531305">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="313" y="-194" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578440456925" />
+    <state x="311" y="-212" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578440531305" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -601,22 +601,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578438976016">
+    <state width="1897" height="306" key="GridCell.Tab.0.bottom" timestamp="1578441221581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976016" />
-    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578438976014">
+    <state width="1897" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221581" />
+    <state width="1897" height="306" key="GridCell.Tab.0.center" timestamp="1578441221580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976014" />
-    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578438976014">
+    <state width="1897" height="306" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221580" />
+    <state width="1897" height="306" key="GridCell.Tab.0.left" timestamp="1578441221580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976014" />
-    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578438976015">
+    <state width="1897" height="306" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221580" />
+    <state width="1897" height="306" key="GridCell.Tab.0.right" timestamp="1578441221581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578438976015" />
+    <state width="1897" height="306" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221581" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -673,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="513" y="57" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578438997989">
+    <state x="511" y="39" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578440536314">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="513" y="57" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578438997989" />
+    <state x="511" y="39" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578440536314" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -697,6 +697,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578268548714" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/TweetTable.js</url>
+          <line>180</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/doxa$_Footer___.info" NAME="&lt;Footer /&gt; Coverage Results" MODIFIED="1576431232294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
