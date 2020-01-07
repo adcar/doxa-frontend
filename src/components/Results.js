@@ -87,7 +87,7 @@ export default function Results({ term }) {
           align="center"
           className={classes.spinnerLabel}
         >
-          Analyzing Tweets for term{" "}
+          Analyzing Tweets for{" "}
           <Typography variant="inherit" color="primary">
             "{term}"
           </Typography>
