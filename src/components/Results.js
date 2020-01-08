@@ -70,6 +70,17 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("lg")]: {
       margin: 0
     }
+  },
+
+  peopleSayingText: {
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(8)
+  },
+  tweets: {
+    marginBottom: theme.spacing(8)
+  },
+  allTweetsText: {
+    marginBottom: theme.spacing(4)
   }
 }));
 
@@ -168,7 +179,7 @@ export default function Results({ term }) {
           "{term}"
         </Typography>
       </Typography>
-      <Grid container justify="center" spacing={8}>
+      <Grid container justify="center">
         <Grid item lg={6} className={classes.gauge}>
           <Typography {...labelProps} style={{ maxWidth: 500 }}>
             Sentiment Score
@@ -182,7 +193,7 @@ export default function Results({ term }) {
           </Typography>
           <TweetCountPie {...chartProps} />
         </Grid>
-        <Grid item sm={12}>
+        <Grid item sm={12} className={classes.peopleSayingText}>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
             What people are saying about{" "}
             <Typography color="primary" variant="inherit">
@@ -193,11 +204,11 @@ export default function Results({ term }) {
             Top 6 Tweets sorted by favorites
           </Typography>
         </Grid>
-        <Grid item sm={12}>
-          <Tweets className={classes.tweets} tweets={topTweets} term={term} />
+        <Grid item sm={12} className={classes.tweets}>
+          <Tweets tweets={topTweets} term={term} />
         </Grid>
 
-        <Grid item sm={12}>
+        <Grid item sm={12} className={classes.allTweetsText}>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
             All Tweets
           </Typography>
