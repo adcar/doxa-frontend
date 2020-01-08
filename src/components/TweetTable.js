@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import h2p from "html2plaintext";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -11,6 +11,9 @@ import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
+import Fab from "@material-ui/core/Fab";
+
+import DownloadIcon from "@material-ui/icons/CloudDownload";
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -158,10 +161,17 @@ const useStyles = makeStyles(theme => ({
   },
   headCellIconAsc: {
     color: theme.palette.primary.contrastText + " !important"
+  },
+  fabWrapper: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-end",
+    marginTop: theme.spacing(4)
   }
 }));
 
 export default function TweetTable({ tweets }) {
+  const theme = useTheme();
   const notExtraSmall = useMediaQuery("@media screen and (min-width: 432px)");
   const tableEl = useRef(null);
   let rows = [];
@@ -271,6 +281,16 @@ export default function TweetTable({ tweets }) {
         onChangePage={handleChangePage}
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
+      <div className={classes.fabWrapper}>
+        <Fab variant="extended" color="primary">
+          <DownloadIcon
+            style={{
+              marginRight: theme.spacing(1)
+            }}
+          />
+          Download (CSV)
+        </Fab>
+      </div>
     </div>
   );
 }
