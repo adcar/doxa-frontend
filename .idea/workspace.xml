@@ -183,14 +183,7 @@
       <workItem from="1577921327968" duration="138000" />
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
-      <workItem from="1578342771946" duration="26093000" />
-    </task>
-    <task id="LOCAL-00043" summary="Removed Gauge.css">
-      <created>1578099749046</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1578099749046</updated>
+      <workItem from="1578342771946" duration="27411000" />
     </task>
     <task id="LOCAL-00044" summary="Fixed scrolling issue on table. Resized Sentiment Gauge and Pie chart">
       <created>1578106936407</created>
@@ -528,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578440531441</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Reset scroll when changing page">
+      <created>1578441470643</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1578441470643</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Made innerText larger on larger devices" />
     <MESSAGE value="Scroll to top when searching using the main search" />
     <MESSAGE value="Scroll to top when analyzing using the main search" />
     <MESSAGE value="Added a page for when no search terms are recongnized" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Add &quot;name&quot; and &quot;profileImage&quot;" />
     <MESSAGE value="Displayed Tweets and changed theme color" />
     <MESSAGE value="Added h2p to content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added h2p to content" />
+    <MESSAGE value="Reset scroll when changing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset scroll when changing page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -589,10 +589,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="311" y="-212" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578440531305">
+    <state x="309" y="-230" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578441470519">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="311" y="-212" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578440531305" />
+    <state x="309" y="-230" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578441470519" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -673,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="511" y="39" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578440536314">
+    <state x="509" y="21" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578441475395">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="511" y="39" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578440536314" />
+    <state x="509" y="21" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578441475395" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -697,18 +697,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578268548714" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/TweetTable.js</url>
-          <line>180</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/doxa$_Footer___.info" NAME="&lt;Footer /&gt; Coverage Results" MODIFIED="1576431232294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

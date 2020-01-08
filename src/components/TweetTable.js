@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import h2p from "html2plaintext";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -161,6 +162,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function TweetTable({ tweets }) {
+  const notExtraSmall = useMediaQuery("@media screen and (min-width: 432px)");
   const tableEl = useRef(null);
   let rows = [];
   tweets.edges.forEach(({ node }) => rows.push(node));
@@ -264,6 +266,7 @@ export default function TweetTable({ tweets }) {
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}
+        labelRowsPerPage={notExtraSmall ? "Rows Per Page:" : "Rows:"}
         page={page}
         onChangePage={handleChangePage}
         onChangeRowsPerPage={handleChangeRowsPerPage}
