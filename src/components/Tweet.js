@@ -8,11 +8,16 @@ import Button from "@material-ui/core/Button";
 import Linkify from "react-linkify";
 import h2p from "html2plaintext";
 import Highlighter from "react-highlight-words";
+import Twemoji from "react-twemoji";
 
 const useStyles = makeStyles(theme => ({
   root: {
     padding: `${theme.spacing(2)}px ${theme.spacing(3)}px`,
-    height: 225,
+    minHeight: 225,
+
+    ["@media screen and (min-width: 400px)"]: {
+      minWidth: 370
+    },
     display: "flex",
     cursor: "pointer",
     boxShadow: "none",
@@ -22,7 +27,9 @@ const useStyles = makeStyles(theme => ({
   },
   profileImage: {
     borderRadius: theme.shape.borderRadius,
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
+    width: 48,
+    height: 48
   },
   tweetBody: {
     flex: 1
@@ -34,6 +41,14 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "transparent",
     fontFamily: theme.typography.fontFamily,
     color: theme.palette.primary.main
+  },
+  emoji: {
+    width: 48,
+    height: 48
+  },
+  emojiWrapper: {
+    display: "flex",
+    justifyContent: "flex-end"
   }
 }));
 
@@ -46,7 +61,8 @@ export default function Tweet({
   content,
   tweetId,
   createdAt,
-  term
+  term,
+  normalizedSentiment
 }) {
   const classes = useStyles();
   const highlightProps = {
@@ -83,7 +99,14 @@ export default function Tweet({
       {text}
     </Link>
   );
-
+  let emoji = "";
+  if (normalizedSentiment === "positive") {
+    emoji = "😊";
+  } else if (normalizedSentiment === "negative") {
+    emoji = "😠";
+  } else {
+    emoji = "😐";
+  }
   return (
     <Paper
       className={classes.root}
@@ -95,7 +118,7 @@ export default function Tweet({
       }
     >
       <Grid container alignItems="center">
-        <Grid item xs={12}>
+        <Grid item xs={10}>
           <div
             style={{
               display: "flex"
@@ -111,6 +134,14 @@ export default function Tweet({
               <Typography variant="caption">@{username}</Typography>
             </div>
           </div>
+        </Grid>
+        <Grid item xs={2}>
+          <Twemoji
+            className={classes.emojiWrapper}
+            options={{ className: classes.emoji }}
+          >
+            {emoji}
+          </Twemoji>
         </Grid>
         <Grid item xs={12}>
           <Typography
