@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Router from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
 const btnWidth = 120;
 const height = 60;
@@ -38,26 +39,11 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(4),
     height,
     width: "100%",
-
+    fontSize: "medium",
     [theme.breakpoints.up("sm")]: {
       position: "absolute",
       width: btnWidth,
       right: 0
-    },
-
-    fontSize: "14pt",
-    border: "none",
-    transition: "all 0.25s ease-out",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-    outline: "none",
-    boxShadow: theme.shadows[2],
-    "&:hover": {
-      boxShadow: theme.shadows[5]
-    },
-    "&:focus": {
-      backgroundColor: theme.palette.primary.dark
     }
   }
 }));
@@ -88,7 +74,14 @@ export default function MainSearch() {
         title="Only numbers, letters, dollar signs ($), and hashtags (#) are allowed"
         required
       />
-      <input type="submit" className={classes.submit} value={"Analyze"} />
+      <Button
+        variant="contained"
+        color="primary"
+        type="submit"
+        className={classes.submit}
+      >
+        Analyze
+      </Button>
     </form>
   );
 }

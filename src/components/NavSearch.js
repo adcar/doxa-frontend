@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Router from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(theme => ({
   input: {
@@ -22,24 +23,12 @@ const useStyles = makeStyles(theme => ({
     }
   },
   submit: {
+    fontSize: "small",
     cursor: "pointer",
     height: 30,
     padding: "0px 15px",
     position: "absolute",
-    right: 0,
-    transition: "all 0.25s ease-out",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-    outline: "none",
-    border: "none",
-    boxShadow: theme.shadows[2],
-    "&:hover": {
-      boxShadow: theme.shadows[5]
-    },
-    "&:focus": {
-      backgroundColor: theme.palette.primary.dark
-    }
+    right: 0
   },
   form: {
     position: "relative"
@@ -69,7 +58,14 @@ export default function NavSearch() {
         title="Only numbers, letters, dollar signs ($), and hashtags (#) are allowed"
         required
       />
-      <input className={classes.submit} type="submit" value="Analyze" />
+      <Button
+        className={classes.submit}
+        type="submit"
+        variant="contained"
+        color="primary"
+      >
+        Analyze
+      </Button>
     </form>
   );
 }
