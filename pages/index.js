@@ -199,8 +199,9 @@ export default function Index() {
                   <Typography>
                     Doxa uses a sentiment analysis tool called Valence Aware
                     Dictionary and sEntiment Reasoner (VADER). This tool
-                    utilizes artificial intelligence to process language and
-                    determine what is positive, negative, or neutral.
+                    utilizes lexicon-based sentiment analysis to process
+                    language and determine what is positive, negative, or
+                    neutral.
                   </Typography>
                 </div>
               </Fade>
