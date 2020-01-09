@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import h2p from "html2plaintext";
+import { CSVLink } from "react-csv";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -12,7 +13,6 @@ import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Fab from "@material-ui/core/Fab";
-
 import DownloadIcon from "@material-ui/icons/CloudDownload";
 
 function desc(a, b, orderBy) {
@@ -56,7 +56,7 @@ const headCells = [
     disablePadding: false,
     label: "Sentiment"
   },
-  { id: "favorites", numeric: true, disablePadding: false, label: "Favorites" },
+  { id: "favorites", numeric: true, disablePadding: false, label: "Likes" },
   { id: "retweets", numeric: true, disablePadding: false, label: "Retweets" }
 ];
 function EnhancedTableHead(props) {
@@ -177,6 +177,19 @@ export default function TweetTable({ tweets }) {
   let rows = [];
   tweets.edges.forEach(({ node }) => rows.push(node));
 
+  let csvData = [];
+  rows.forEach(row => {
+    csvData.push({
+      Username: row.username,
+      Content: row.content.replace(/"/g, "“"),
+      "Numeric Sentiment": row.polarity,
+      Sentiment: row.sentiment,
+      Favorites: row.favorites,
+      Retweets: row.retweets,
+      "Creation Date": row.createdAt
+    });
+  });
+
   const classes = useStyles();
   const [order, setOrder] = React.useState("desc");
   const [orderBy, setOrderBy] = React.useState("favorites");
@@ -282,7 +295,14 @@ export default function TweetTable({ tweets }) {
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
       <div className={classes.fabWrapper}>
-        <Fab variant="extended" color="primary">
+        <Fab
+          variant="extended"
+          color="primary"
+          component={CSVLink}
+          data={csvData}
+          filename={"doxa.csv"}
+          // TODO: Change filename to doxa_results_<term>_<date>.csv
+        >
           <DownloadIcon
             style={{
               marginRight: theme.spacing(1)

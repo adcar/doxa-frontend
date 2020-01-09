@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TweetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,14 +186,7 @@
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
       <workItem from="1578342771946" duration="29984000" />
-      <workItem from="1578526128324" duration="1097000" />
-    </task>
-    <task id="LOCAL-00046" summary="Changed the default table sorting to &quot;favorites&quot;">
-      <created>1578107139706</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1578107139706</updated>
+      <workItem from="1578526128324" duration="4685000" />
     </task>
     <task id="LOCAL-00047" summary="Changed the default order to &quot;desc&quot;">
       <created>1578107562484</created>
@@ -529,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578526483973</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Add a download button to the table (not functional)">
+      <created>1578527239903</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1578527239903</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added a page for when no search terms are recongnized" />
     <MESSAGE value="Added some error messages" />
     <MESSAGE value="Removed the margin top on footer" />
     <MESSAGE value="Made background image closer to the center" />
@@ -575,7 +576,8 @@
     <MESSAGE value="Reset scroll when changing page" />
     <MESSAGE value="Shortened table wording for mobile" />
     <MESSAGE value="Added an animation for tweets. May delete Remove this if it turns out to be a pain point" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added an animation for tweets. May delete Remove this if it turns out to be a pain point" />
+    <MESSAGE value="Add a download button to the table (not functional)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a download button to the table (not functional)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -590,10 +592,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="323" y="-114" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578526483728">
+    <state x="317" y="-168" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578531049659">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="323" y="-114" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578526483728" />
+    <state x="317" y="-168" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578531049659" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -602,22 +604,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="260" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576429830085" />
-    <state width="1897" height="306" key="GridCell.Tab.0.bottom" timestamp="1578441221581">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom" timestamp="1578527368642">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221581" />
-    <state width="1897" height="306" key="GridCell.Tab.0.center" timestamp="1578441221580">
+    <state width="1897" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527368642" />
+    <state width="1897" height="190" key="GridCell.Tab.0.center" timestamp="1578527368640">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="306" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221580" />
-    <state width="1897" height="306" key="GridCell.Tab.0.left" timestamp="1578441221580">
+    <state width="1897" height="190" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527368640" />
+    <state width="1897" height="190" key="GridCell.Tab.0.left" timestamp="1578527368639">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="306" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221580" />
-    <state width="1897" height="306" key="GridCell.Tab.0.right" timestamp="1578441221581">
+    <state width="1897" height="190" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527368639" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right" timestamp="1578527368641">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1897" height="306" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578441221581" />
+    <state width="1897" height="190" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527368641" />
     <state width="1897" height="306" key="GridCell.Tab.1.bottom" timestamp="1576517597590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -694,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="300" width="576" height="439" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921560015" />
-    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1578268548714">
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1578528465521">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578268548714" />
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578528465521" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/doxa$_Footer___.info" NAME="&lt;Footer /&gt; Coverage Results" MODIFIED="1576431232294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
