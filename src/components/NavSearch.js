@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(theme => ({
   input: {
-    width: "100%",
+    width: "80%",
     transition: "all 0.25s ease-out",
     paddingLeft: 20,
     paddingRight: 80,
@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.primary,
     border: "none",
     "&:focus": {
-      backgroundColor: theme.palette.background.other
+      backgroundColor: theme.palette.background.other,
+      width: "100%"
     },
     "&::placeholder": {
       color: theme.palette.text.hint
@@ -31,7 +32,9 @@ const useStyles = makeStyles(theme => ({
     right: 0
   },
   form: {
-    position: "relative"
+    position: "relative",
+    display: "flex",
+    justifyContent: "flex-end"
   }
 }));
 
