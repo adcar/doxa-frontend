@@ -4,7 +4,6 @@
     <list default="true" id="8daec542-d403-4842-8d42-165331125038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,14 +184,7 @@
       <workItem from="1577921483457" duration="14273000" />
       <workItem from="1577937278889" duration="81317000" />
       <workItem from="1578342771946" duration="29984000" />
-      <workItem from="1578526128324" duration="6766000" />
-    </task>
-    <task id="LOCAL-00049" summary="Utilize &quot;prefers-color-scheme&quot;">
-      <created>1578110710364</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1578110710364</updated>
+      <workItem from="1578526128324" duration="7353000" />
     </task>
     <task id="LOCAL-00050" summary="Changed default to light">
       <created>1578111445823</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578532030680</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Changed buttons to Material-UI's buttons">
+      <created>1578532954376</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1578532954376</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added the &quot;Dribble&quot; corners to footer" />
     <MESSAGE value="Added more information to the landing page" />
     <MESSAGE value="Removed some padding to make the landing page more mobile-friendly" />
     <MESSAGE value="Increase padding and made images reverse" />
@@ -576,7 +574,8 @@
     <MESSAGE value="Made the download button download an CSV file" />
     <MESSAGE value="Made the &quot;download CSV&quot; button work" />
     <MESSAGE value="Added cleaner error messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cleaner error messages" />
+    <MESSAGE value="Changed buttons to Material-UI's buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed buttons to Material-UI's buttons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="174" width="602" height="655" key="#Next" timestamp="1578254736174">
@@ -591,10 +590,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="217" width="628" height="534" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577921461449" />
-    <state x="447" y="42" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578532942122">
+    <state x="445" y="24" width="1150" height="970" key="CommitChangelistDialog2" timestamp="1578532954287">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="447" y="42" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578532942122" />
+    <state x="445" y="24" width="1150" height="970" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578532954287" />
     <state x="283" y="97" width="1540" height="884" key="DiffContextDialog" timestamp="1578256927036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -675,10 +674,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="454" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578254704997" />
-    <state x="501" y="-51" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578532034110">
+    <state x="570" y="80" width="804" height="526" key="Vcs.Push.Dialog.v2" timestamp="1578532956921">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="501" y="-51" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578532034110" />
+    <state x="570" y="80" width="804" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578532956921" />
     <state x="963" y="14" width="949" height="1058" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575565846660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

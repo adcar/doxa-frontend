@@ -69,7 +69,7 @@ export default function MainSearch() {
         type="text"
         className={classes.input}
         onChange={e => setTerm(e.target.value)}
-        placeholder="Business Name"
+        placeholder="Term (e.g., business name)"
         pattern="^[\w\s!#$']+$"
         title="Only numbers, letters, dollar signs ($), and hashtags (#) are allowed"
         required

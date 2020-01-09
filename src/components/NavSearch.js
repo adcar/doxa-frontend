@@ -53,7 +53,7 @@ export default function NavSearch() {
         className={classes.input}
         type="text"
         onChange={e => setTerm(e.target.value)}
-        placeholder="Business Name"
+        placeholder="Term"
         pattern="^[\w\s!#$']+$"
         title="Only numbers, letters, dollar signs ($), and hashtags (#) are allowed"
         required
