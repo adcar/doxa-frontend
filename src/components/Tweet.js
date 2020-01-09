@@ -140,6 +140,9 @@ export default function Tweet({
 
         <Grid item xs={6} align="right">
           <Button
+            style={{
+              textDecoration: "none"
+            }}
             component={Link}
             href={`https://twitter.com/${username}/status/${tweetId}`}
             target="_blank"
