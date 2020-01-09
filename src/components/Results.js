@@ -66,7 +66,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: theme.spacing(8)
+    marginBottom: theme.spacing(8),
+    overflowX: "hidden"
   },
   gauge: {
     [theme.breakpoints.up("lg")]: {
