@@ -183,7 +183,7 @@ export default function TweetTable({ tweets }) {
       Username: row.username,
       Content: row.content.replace(/"/g, "“"),
       "Numeric Sentiment": row.polarity,
-      Sentiment: row.sentiment,
+      Sentiment: row.normalizedSentiment,
       Favorites: row.favorites,
       Retweets: row.retweets,
       "Creation Date": row.createdAt
