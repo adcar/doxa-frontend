@@ -163,10 +163,11 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.contrastText + " !important"
   },
   fabWrapper: {
+    minHeight: 80,
     width: "100%",
     display: "flex",
     justifyContent: "flex-end",
-    marginTop: theme.spacing(4)
+    alignItems: "center"
   }
 }));
 
