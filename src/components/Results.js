@@ -5,6 +5,7 @@ import HashLoader from "react-spinners/HashLoader";
 import Typography from "@material-ui/core/Typography";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import "./twemoji.css";
 import SentimentGauge from "./SentimentGauge";
@@ -12,6 +13,7 @@ import TweetCountPie from "./TweetCountPie";
 import TweetTable from "./TweetTable";
 import Tweets from "./Tweets";
 import undrawEmpty from "../../public/undraw_empty.svg";
+import undrawBug from "../../public/undraw_bug_fixing.svg";
 import SiteError from "./SiteError";
 
 const GET_SENTIMENT = gql`
@@ -113,11 +115,32 @@ export default function Results({ term }) {
       </Container>
     );
   if (error) {
-    if (error.graphQLErrors[0]) {
-      return <p>Error: {error.graphQLErrors[0].message}</p>;
-    } else {
-      return <p>An unknown error has occurred</p>;
-    }
+    return (
+      <SiteError
+        svg={undrawBug}
+        alt="Man with empty box"
+        title={
+          error.graphQLErrors[0] ? (
+            <Typography align="center" variant="h3" component="h1">
+              Error:{" "}
+              <Typography color="primary" variant="inherit">
+                {error.graphQLErrors[0].message}
+              </Typography>
+            </Typography>
+          ) : (
+            <Typography align="center" variant="h3" component="h1">
+              An unknown error has occurred
+            </Typography>
+          )
+        }
+        subtitle={
+          <span>
+            Sorry about that! If this problem persist contact{" "}
+            <Link href="mailto:contact@acardosi.dev">contact@acardosi.dev</Link>
+          </span>
+        }
+      />
+    );
   }
 
   const topTweets = data.sentiment.tweets.edges.sort((a, b) =>
