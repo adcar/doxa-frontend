@@ -38,17 +38,16 @@ const useStyles = makeStyles(theme => ({
         : [theme.shadows[13]]
   },
   splash: {
-    minHeight: `calc(70vh - 80px)`,
-    width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     [theme.breakpoints.up("md")]: {
-      height: `calc(100vh - 140px)`,
+      height: "80vh",
       justifyContent: "flex-start",
+      objectFit: "contain",
       backgroundPosition: `right ${theme.spacing(16)}px center`,
       backgroundImage: `url(${splash})`,
-      backgroundSize: `60vw auto`,
+      backgroundSize: `contain`,
       backgroundRepeat: "no-repeat",
       backgroundColor: theme.palette.background.default
     }
