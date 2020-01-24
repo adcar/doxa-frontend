@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import NavSearch from "./NavSearch";
 import Link from "next/link";
 import clsx from "clsx";
+import doxaLogo from "../../public/doxa-logo.svg";
 
 const useStyles = makeStyles(theme => ({
   nav: {
@@ -16,6 +17,15 @@ const useStyles = makeStyles(theme => ({
   divider: {
     borderBottom: `1px solid ${theme.palette.divider}`,
     marginBottom: theme.spacing(8)
+  },
+  logo: {
+    height: 50,
+    marginRight: theme.spacing(2)
+  },
+  linkedWrapper: {
+    display: "flex",
+    cursor: "pointer",
+    alignItems: "center"
   }
 }));
 
@@ -31,13 +41,12 @@ export default function Navbar() {
       )}
     >
       <Link href="/">
-        <Typography
-          style={{
-            cursor: "pointer"
-          }}
-        >
-          Doxa
-        </Typography>
+        <div className={classes.linkedWrapper}>
+          <img className={classes.logo} src={doxaLogo} alt="Doxa logo" />
+          <Typography variant="h5" color="primary">
+            Doxa
+          </Typography>
+        </div>
       </Link>
       <NavSearch />
     </nav>
