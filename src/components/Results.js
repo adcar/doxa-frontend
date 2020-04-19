@@ -136,7 +136,7 @@ export default function Results({ term }) {
         }
         subtitle={
           <span>
-            Sorry about that! If this problem persist contact{" "}
+            Sorry about that! If this problem persists contact{" "}
             <Link href="mailto:contact@acardosi.dev">contact@acardosi.dev</Link>
           </span>
         }
